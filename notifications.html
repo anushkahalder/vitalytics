@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<!-- Created by CodingLab |www.youtube.com/CodingLabYT-->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title>Notifications</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+   </head>
+   
+<body>
+
+
+
+  <div class="sidebar">
+    <div class="logo-details">
+      <!-- <i class='bx bxl-c-plus-plus icon'></i> -->
+        <!-- <div class="logo_name" style="color: rgb(172, 10, 10);">VITALYTICS</div> -->
+        <i class='bx bx-menu' id="btn" ></i>
+    </div>
+    <ul class="nav-list">
+      <!-- <li>
+          <i class='bx bx-search' ></i>
+         <input type="text" placeholder="Search...">
+         <span class="tooltip">Search</span>
+      </li> -->
+      <li>
+        <a href="#">
+          <i class='bx bx-grid-alt'></i>
+          <span class="links_name">Dashboard</span>
+        </a>
+         <span class="tooltip">Dashboard</span>
+      </li>
+ 
+     <li>
+       <a href="index.html">
+         <i class='bx bx-chart' ></i>
+         <span class="links_name">Competitive Analysis</span>
+       </a>
+       <span class="tooltip">Competitive Analysis</span>
+     </li>
+     <li>
+       <a href="brand.html">
+         <i class='bx bx-pie-chart-alt-2' ></i>
+         <span class="links_name">Brand Analysis</span>
+       </a>
+       <span class="tooltip">Brand Analysis</span>
+     </li>
+     <li>
+       <a href="notifications.html">
+         <i class='bx bx-bell' ></i>
+         <span class="links_name">Notifications</span>
+       </a>
+       <span class="tooltip">Notifications</span>
+     </li>
+ 
+     <li>
+       <a href="#">
+         <i class='bx bx-heart' ></i>
+         <span class="links_name">Coupon Violation</span>
+       </a>
+       <span class="tooltip">Coupon Violation</span>
+     </li>
+     <li>
+       <a href="#">
+         <i class='bx bx-cog' ></i>
+         <span class="links_name">Admin Role</span>
+       </a>
+       <span class="tooltip">Admin Role</span>
+     </li>
+     <!-- <li class="profile">
+         <div class="profile-details">
+           <div class="name_job">
+             <div class="job">Collapse</div>
+           </div>
+         </div>         <i class='bx bx-log-out' id="log_out" ></i>
+     </li> -->
+    </ul>
+  </div>
+
+
+  <section class="home-section">
+ 
+<!-- ---------------Top Nav Bar-----------------------  -->
+<nav class="navbar sticky-top navbar-light bg-light">
+  <a class="navbar-brand" href="#">
+    <img src="vitamixlogo.PNG" width="30" height="30" class="d-inline-block align-top" alt="">
+    <span style="color: rgb(177, 7, 7);">Vitalytics</span>
+  </a>
+  <form class="form-inline">
+    <!-- <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"> -->
+    <div class="cont">
+      <div class="searchInput">
+        <input type="text" placeholder="Search for any Content..">
+        <div class="resultBox">
+
+        </div>
+        <div class="icon"><i class="fas fa-search"></i></div>
+      </div>
+    </div>
+    
+
+    <button class="btn btn-outline-dark my-2 my-sm-0" type="submit" style="margin-right: 55px;">Search</button>
+    <div class="btn-group" style="padding-right: 10px;">
+
+      <a class="nav-item nav-link dropdown-toggle mr-md-2" href="#" id="bd-versions" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" style="color: black; font-size: 20px; padding-left: -20px;">
+    <!-- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbG9cPD_gIpfsj4CXj70sxhLIyskQbP87RMg&usqp=CAU" width="30" height="30" class="d-inline-block align-top" alt="" >
+     -->
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4MmBOmXsxgjBhhfDh4FSeM9wsFRgC_2uPrE362dA&s" width="30" height="30" class="d-inline-block align-top" alt="" style="border-radius: 50px;"> <small>Admin</small>
+
+        
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Profile</a> 
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#">LogOut</a>
+      </div>
+ 
+    </div>
+    <a href="notifications.html" style="color: black; font-size: larger;"> <i class='bx bx-bell' style="padding-right: 10px;" ></i></a>
+   
+  
+  </form>
+</nav>
+
+<!-- ----------------Bottom Nav Bar-------------------------- -->
+<nav class="navbar fixed-bottom navbar-light bg-light" style="margin-left: 5%;">
+  <a class="navbar-brand" href="#" style="float: right;"></a>
+  <span class="navbar-text" style="color: black;">
+    Last updated: 16-06-2023 17:00
+  </span>
+</nav>
+
+      <div class="container">
+
+        <article class="leaderboard">
+            <header style="margin-top: -10px; height: 80px;">
+
+              <h1 class="leaderboard__title"><span class="leaderboard__title--top"></span><i class='bx bx-bell' style="color: black;" ></i><span class="leaderboard__title--bottom" style="color: black; margin-top: 1px;">Notifications  </span></h1>
+            </header>
+            
+            <main class="leaderboard__profiles">
+              <article class="leaderboard__profile">
+                <img src="data:image/png;base64,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" alt="Mark Zuckerberg" class="leaderboard__picture">
+                <!-- <span class="leaderboard__name">Mark Zuckerberg</span> -->
+                <span>10% OFF! *
+                    When you sign up to receive the latest sale and
+                    product announcements from Shark and Ninja. </span>
+                    <small style="padding-left: 160px;">LastUpdated: 2023-06-18 19:54:00</small>
+                <!-- <span class="leaderboard__value">01<span></span></span> -->
+              </article>
+              
+              <article class="leaderboard__profile">
+                <img src="data:image/png;base64,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" alt="Dustin Moskovitz" class="leaderboard__picture">
+                <span  >Save $100 this Father's day on professional 800</span>
+                <small style="padding-left: 160px;">LastUpdated: 2023-06-18 19:54:00</small>
+                <!-- <span class="leaderboard__value">02<span></span></span> -->
+              </article>
+              
+              <article class="leaderboard__profile">
+                <img src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco,dpr_1/v1419696905/fqt7j0afokitbrwstnlt.png" alt="Elizabeth Holmes" class="leaderboard__picture">
+                <span>$75 off the new Joule® Turbo Sous Vide with proof of ownership of an original</span>
+                <small style="padding-left: 160px;">LastUpdated: 2023-06-18 19:54:00</small>
+                <!-- <span class="leaderboard__value">03<span></span></span> -->
+              </article>
+              
+              <article class="leaderboard__profile">
+                <img src="data:image/png;base64,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" alt="Evan Spiegel" class="leaderboard__picture">
+                <span  >20% off sitewide now through 6/18 with code GIFTFORDAD</span>
+                <small style="padding-left: 160px;">LastUpdated: 2023-06-18 19:54:00</small>
+                <!-- <span class="leaderboard__value">04<span></span></span> -->
+              </article>
+            </main>
+          </div>
+
+
+      </div>
+</section>
+
+
+<script>
+    function myFunction() {
+    var x = document.getElementById("mytable");
+    var y = document.getElementById("mycard");
+    var z = document.getElementById("mycard2");
+  
+  
+    if (x.style.display === "none" && y.style.display === "none" ) {
+      x.style.display = "block";
+      y.style.display = "flex"
+      z.style.display = "none"
+    } else {
+      x.style.display = "none";
+      y.style.display = "none"
+      z.style.display = "flex"
+    }
+  }
+  </script>
+  
+    <script>
+    let sidebar = document.querySelector(".sidebar");
+    let closeBtn = document.querySelector("#btn");
+    let searchBtn = document.querySelector(".bx-search");
+    let hide = document.querySelector(".card");
+  
+    closeBtn.addEventListener("click", ()=>{
+      sidebar.classList.toggle("open");
+      menuBtnChange();//calling the function(optional)
+    });
+  
+    searchBtn.addEventListener("click", ()=>{ // Sidebar open when you click on the search iocn
+      sidebar.classList.toggle("open");
+      menuBtnChange(); //calling the function(optional)
+    });
+  
+    // following are the code to change sidebar button(optional)
+    function menuBtnChange() {
+     if(sidebar.classList.contains("open")){
+       closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");//replacing the iocns class
+     }else {
+       closeBtn.classList.replace("bx-menu-alt-right","bx-menu");//replacing the iocns class
+     }
+    }
+    </script>
+   <script>
+    $(".checkbox-menu").on("change", "input[type='checkbox']", function() {
+     $(this).closest("li").toggleClass("active", this.checked);
+  });
+  
+  $(document).on('click', '.allow-focus', function (e) {
+    e.stopPropagation();
+  });
+   </script>
+  
+   <script src="script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+  </html>

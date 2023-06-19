@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<!-- Created by CodingLab |www.youtube.com/CodingLabYT-->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title>Table</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+   </head>
+   
+<body>
+
+
+
+
+
+  <div class="sidebar">
+    <div class="logo-details">
+      <!-- <i class='bx bxl-c-plus-plus icon'></i> -->
+        <!-- <div class="logo_name" style="color: rgb(172, 10, 10);">VITALYTICS</div> -->
+        <i class='bx bx-menu' id="btn" ></i>
+    </div>
+    <ul class="nav-list">
+      <!-- <li>
+          <i class='bx bx-search' ></i>
+         <input type="text" placeholder="Search...">
+         <span class="tooltip">Search</span>
+      </li> -->
+      <li>
+        <a href="#">
+          <i class='bx bx-grid-alt'></i>
+          <span class="links_name">Dashboard</span>
+        </a>
+         <span class="tooltip">Dashboard</span>
+      </li>
+ 
+     <li>
+       <a href="Table.html">
+         <i class='bx bx-chart' ></i>
+         <span class="links_name">Competitive Analysis</span>
+       </a>
+       <span class="tooltip">Competitive Analysis</span>
+     </li>
+     <li>
+       <a href="brand.html">
+         <i class='bx bx-pie-chart-alt-2' ></i>
+         <span class="links_name">Brand Analysis</span>
+       </a>
+       <span class="tooltip">Brand Analysis</span>
+     </li>
+     <li>
+       <a href="notifications.html">
+         <i class='bx bx-bell' ></i>
+         <span class="links_name">Notifications</span>
+       </a>
+       <span class="tooltip">Notifications</span>
+     </li>
+ 
+     <li>
+       <a href="#">
+         <i class='bx bx-heart' ></i>
+         <span class="links_name">Coupon Violation</span>
+       </a>
+       <span class="tooltip">Coupon Violation</span>
+     </li>
+     <li>
+       <a href="#">
+         <i class='bx bx-cog' ></i>
+         <span class="links_name">Admin Role</span>
+       </a>
+       <span class="tooltip">Admin Role</span>
+     </li>
+     <!-- <li class="profile">
+         <div class="profile-details">
+           <div class="name_job">
+             <div class="job">Collapse</div>
+           </div>
+         </div>         <i class='bx bx-log-out' id="log_out" ></i>
+     </li> -->
+    </ul>
+  </div>
+
+
+  <section class="home-section">
+ 
+<!-- ---------------Top Nav Bar-----------------------  -->
+<nav class="navbar sticky-top navbar-light bg-light">
+  <a class="navbar-brand" href="#">
+    <img src="vitamixlogo.PNG" width="30" height="30" class="d-inline-block align-top" alt="">
+    <span style="color: rgb(177, 7, 7);">Vitalytics</span>
+  </a>
+  <form class="form-inline">
+    <!-- <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"> -->
+    <div class="cont">
+      <div class="searchInput">
+        <input type="text" placeholder="Search for any Content..">
+        <div class="resultBox">
+
+        </div>
+        <div class="icon"><i class="fas fa-search"></i></div>
+      </div>
+    </div>
+    
+
+    <button class="btn btn-outline-dark my-2 my-sm-0" type="submit" style="margin-right: 55px;">Search</button>
+    <div class="btn-group" style="padding-right: 10px;">
+
+      <a class="nav-item nav-link dropdown-toggle mr-md-2" href="#" id="bd-versions" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" style="color: black; font-size: 20px; padding-left: -20px;">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4MmBOmXsxgjBhhfDh4FSeM9wsFRgC_2uPrE362dA&s" width="30" height="30" class="d-inline-block align-top" alt="" style="border-radius: 50px;"> <small>Admin</small>
+        
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Profile</a> 
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#">LogOut</a>
+      </div>
+ 
+    </div>
+    <a href="notifications.html" style="color: black; font-size: larger;"> <i class='bx bx-bell' style="padding-right: 10px;" ></i></a>
+   
+  
+  </form>
+</nav>
+
+<!-- ----------------Bottom Nav Bar-------------------------- -->
+<nav class="navbar fixed-bottom navbar-light bg-light" style="margin-left: 5%;">
+  <a class="navbar-brand" href="#" style="float: right;"></a>
+  <span class="navbar-text" style="color: black;">
+    Last updated: 16-06-2023 17:00
+  </span>
+</nav
+
+      <div class="container">
+
+
+        
+
+        <div>
+
+        <div class="row">
+          <div class="col-4">
+            <!-- <div class="cont">
+              <div class="searchInput">
+                <input type="text" placeholder="Search for any Product..">
+                <div class="resultBox">
+        
+                </div>
+                <div class="icon"><i class="fas fa-search"></i></div>
+              </div>
+            </div> -->
+          </div>
+
+          <div class="col-4"></div>
+          <div class="col-4" style="padding-top: 30px !important ;">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true" style="color: black !important;">USA</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false" style="color: black !important;">CANADA</a>
+              </li>
+            
+            </ul>
+            
+          </div>
+        </div>
+
+
+
+        </div>
+
+        <span style="color: grey; padding: 0.5%; margin-left: 13px;  background-color: white; border-radius: 8px; ">Vitamix Stats at a Glimpse</span>
+        <div class="card-group" id="mycard2" style="display:flex; margin-top: 10px;" >
+          <div class="card">
+            <img class="card-img" src="top.PNG" alt="Card image cap" style="margin-top: 20px;">
+            
+          </div>
+          <div class="card">
+            <img class="card-img" src="discounts.PNG" alt="Card image cap">
+            <div class="card-img-overlay">
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img" src="sale3.PNG" alt="Card image cap">
+            <div class="card-img-overlay">
+            </div>
+          </div>
+          <div class="card">
+           <a href="brand.html"><img class="card-img" src="traffic2.PNG" alt="Card image cap" style="margin-top: 30px;"></a> 
+           
+          </div> 
+          
+        </div>
+
+        <div class="row">
+          <!-- <div class="col-2"> </div> -->
+
+          <div class="col-2">
+            <div class="dropdown">
+              <div class="select">
+                <span class="selected">Category</span>
+                <div class="caret"></div>
+              </div>
+              <ul class="menu">
+                <li><input type="checkbox" name="" id=""> Traditional Blending</li>
+                <li><input type="checkbox" name="" id=""> Immersion Blending</li>
+                <li><input type="checkbox" name="" id=""> Single Serve Blending</li>
+                <li><input type="checkbox" name="" id=""> Kitchen Systems</li>
+                <li><input type="checkbox" name="" id=""> Food Recyclers</li>
+                <li><input type="checkbox" name="" id=""> Food Processing</li>
+                <li><input type="checkbox" name="" id=""> Portable Blending</li>
+
+                <!-- <li class="active">Figma</li> -->
+                <li><input type="checkbox" name="" id="">Adobe XD</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-2">
+            <div class="dropdown">
+              <div class="select">
+                <span class="selected">Sub-Category</span>
+                <div class="caret"></div>
+              </div>
+              <ul class="menu">
+                <li><input type="checkbox" name="" id=""> Reconditioned</li>
+                <li><input type="checkbox" name="" id=""> Immersion Blending</li>
+                <li><input type="checkbox" name="" id=""> Single Serve Blending</li>
+                <li><input type="checkbox" name="" id=""> Kitchen Systems</li>
+                <li><input type="checkbox" name="" id=""> BabyBlender</li>
+                <li><input type="checkbox" name="" id=""> Food Processing</li>
+                <li><input type="checkbox" name="" id=""> Portable Blending</li>
+
+                <!-- <li class="active">Figma</li> -->
+                <li><input type="checkbox" name="" id="">Adobe XD</li>
+              </ul>
+            </div>
+             
+      
+          </div>
+
+          <div class="col-2">
+            <div class="dropdown">
+              <div class="select">
+                <span class="selected">Competitor </span>
+                <div class="caret"></div>
+              </div>
+              <ul class="menu">
+                <li><input type="checkbox" name="" id=""> Vitamix</li>
+                <li><input type="checkbox" name="" id=""> KitchenAid</li>
+                <li><input type="checkbox" name="" id=""> Blendtec</li>
+                <!-- <li class="active">Figma</li> -->
+                <li><input type="checkbox" name="" id=""> Blendjet</li>
+                <li><input type="checkbox" name="" id=""> Ninja</li>
+                <li><input type="checkbox" name="" id=""> Nurtibullet</li>
+
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-2">
+            <div class="dropdown">
+              <div class="select">
+                <span class="selected">Retailer</span>
+                <div class="caret"></div>
+              </div>
+              <ul class="menu">
+
+                <li> <input type="checkbox" name="" id=""> Amazon</li>
+                <li><input type="checkbox" name="" id=""> BestBuy</li>
+                <li><input type="checkbox" name="" id=""> Costco</li>
+                <!-- <li class="active">Figma</li> -->
+                <li><input type="checkbox" name="" id=""> Target</li>
+                <li><input type="checkbox" name="" id=""> Waltmart</li>
+
+              </ul>
+            </div>
+          </div>
+
+
+
+
+          <div class="col-2">
+            <div class="dropdown">
+              <div class="select">
+                <span class="selected">Price Range</span>
+                <div class="caret"></div>
+              </div>
+              <ul class="menu">
+                <li><input type="checkbox" name="" id=""> $50-$150</li>
+                <li><input type="checkbox" name="" id=""> $150-$250</li>
+                <li><input type="checkbox" name="" id=""> $250-$500</li>
+                <!-- <li class="active">Figma</li> -->
+                <li><input type="checkbox" name="" id=""> $500-$750</li>
+                <li><input type="checkbox" name="" id=""> $750-$1000</li>
+                <li><input type="checkbox" name="" id=""> $1000+</li>
+
+
+              </ul>
+            </div>
+          </div>
+
+          
+         <div class="col-2">
+            <div class="select_3">
+              <div class="dropdown"><button onclick="myFunction()" type="button" class="btn btn-outline-danger" >Search</button></div>
+
+            </div>
+      
+          </div>
+          
+
+
+
+
+
+        <div class="card" style="display: none;">
+<!-- 
+                <div class="table-concept">
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Dropdown button
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="#">Traditional Blenders</a>
+                          <a class="dropdown-item" href="#">Immersion Blenders</a>
+                          <a class="dropdown-item" href="#">Single Serve Blending</a>
+                          <a class="dropdown-item" href="#">Kitchen Systems</a>
+                          <a class="dropdown-item" href="#">Portable Blending</a>
+                          <a class="dropdown-item" href="#"> Food Recyclers</a>
+
+                        </div>
+                      </div>
+                  <input class="table-radio" type="radio" name="table_radio" id="table_radio_0" checked="checked"/>
+                  <div class="table-display">Showing 1 to 10 of 95 items
+
+                  </div>
+                  
+                  <table>
+                    <thead>
+                      <tr>
+
+                        <th>No</th>
+                        <th>Competitor</th>
+                        <th>category</th>
+                        <th>Product Name</th>
+                        <th>Selling Price</th>
+                        <th>Discounted Price</th>
+
+
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+
+                        <td>  79</td>
+                        <td><input type="checkbox"> Vitammix</td>
+                        <td>Traditional Blending</td>
+                        <td>5200 Standard</td>
+                        <td>$479.95</td>
+                        <td>$479.95</td>
+                      </tr>
+                      <tr>
+
+                        <td>2</td>
+                        <td>Ninja</td>
+                        <td>Kitchen Systems</td>
+                        <td>Professional IQ</td>
+                        <td>$149.99</td>
+                        <td>$149.99</td>
+                      </tr>
+                      <tr>
+
+                        <td>3</td>
+                        <td>NutriBullet</td>
+                        <td>Food Recyclers</td>
+                        <td>Compost2400</td>
+                        <td>$399.99</td>
+                        <td>$349.99</td>
+                      </tr>
+                      <tr>
+
+                        <td>4</td>
+                        <td>KitchenAid</td>
+                        <td>Traditional Blending</td>
+                        <td>SuperQM</td>
+                        <td>$549.99</td>
+                        <td>$499.99</td>
+                      </tr>
+                      <tr>
+
+                        <td>5</td>
+                        <td>Blendtec</td>
+                        <td>Immersion Blenders</td>
+                        <td>Fresh n Furious</td>
+                        <td>$399.99</td>
+                        <td>$399.99</td>
+                      </tr>
+                      <tr>
+
+                        <td>6</td>
+                        <td>Ninja</td>
+                        <td>Kitchen Systems</td>
+                        <td>Professional IQ</td>
+                        <td>$149.99</td>
+                        <td>$149.99</td>
+                      </tr>
+                      <tr>
+
+                        <td>7</td>
+                        <td>Blendtec</td>
+                        <td>Immersion Blenders</td>
+                        <td>Fresh n Furious</td>
+                        <td>$399.99</td>
+                        <td>$399.99</td>
+                      </tr>
+                      <tr>
+
+                        <td>8</td>
+                        <td>NutriBullet</td>
+                        <td>Food Recyclers</td>
+                        <td>Compost2400</td>
+                        <td>$399.99</td>
+                        <td>$349.99</td>
+                      </tr>
+                      <tr>
+
+                        <td>9</td>
+                        <td> Vitammix</td>
+                        <td>Traditional Blending</td>
+                        <td>5200 Standard</td>
+                        <td>$479.95</td>
+                        <td>$479.95</td>
+                      </tr>
+                      <tr>
+
+                        <td>10</td>
+                        <td>Blendtec</td>
+                        <td>Immersion Blenders</td>
+                        <td>Fresh n Furious</td>
+                        <td>$399.99</td>
+                        <td>$399.99</td>
+                      </tr>
+                      
+                    </tbody>
+                  </table>
+                  <div class="pagination">
+                    <label class="disabled" for="table_radio_-1">&laquo; Previous</label>
+                    <label class="active" for="table_radio_0" id="table_pager_0">1</label>
+                    <label for="table_radio_1" id="table_pager_1">2</label>
+                    <label for="table_radio_2" id="table_pager_2">3</label>
+                    <label for="table_radio_3" id="table_pager_3">4</label>
+                    <label for="table_radio_4" id="table_pager_4">5</label>
+                    <label for="table_radio_1">Next &raquo;</label>
+                  </div>
+                  <input class="table-radio" type="radio" name="table_radio" id="table_radio_1"/>
+                  <div class="table-display">Showing 20 to 30
+                    of 95 items
+                  </div>
+                  <table>
+                    <thead>
+                      <tr>
+                        <th></th>
+                        <th>No</th>
+                        <th>Competitor</th>
+                        <th>category</th>
+                        <th>Product Name</th>
+                        <th>Selling Price</th>
+                        <th>Discounted Price</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <input type="checkbox"/>
+                        </td>
+                        <td>21</td>
+                        <td>This is Item number 1-21</td>
+                        <td>This is Item number 2-21</td>
+                        <td>This is Item number 3-21</td>
+                        <td>This is Item number 4-21</td>
+                        <td>This is Item number 5-21</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input type="checkbox"/>
+                        </td>
+                        <td>22</td>
+                        <td>This is Item number 1-22</td>
+                        <td>This is Item number 2-22</td>
+                        <td>This is Item number 3-22</td>
+                        <td>This is Item number 4-22</td>
+                        <td>This is Item number 5-22</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input type="checkbox"/>
+                        </td>
+                        <td>23</td>
+                        <td>This is Item number 1-23</td>
+                        <td>This is Item number 2-23</td>
+                        <td>This is Item number 3-23</td>
+                        <td>This is Item number 4-23</td>
+                        <td>This is Item number 5-23</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input type="checkbox"/>
+                        </td>
+                        <td>24</td>
+                        <td>This is Item number 1-24</td>
+                        <td>This is Item number 2-24</td>
+                        <td>This is Item number 3-24</td>
+                        <td>This is Item number 4-24</td>
+                        <td>This is Item number 5-24</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input type="checkbox"/>
+                        </td>
+                        <td>25</td>
+                        <td>This is Item number 1-25</td>
+                        <td>This is Item number 2-25</td>
+                        <td>This is Item number 3-25</td>
+                        <td>This is Item number 4-25</td>
+                        <td>This is Item number 5-25</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input type="checkbox"/>
+                        </td>
+                        <td>26</td>
+                        <td>This is Item number 1-26</td>
+                        <td>This is Item number 2-26</td>
+                        <td>This is Item number 3-26</td>
+                        <td>This is Item number 4-26</td>
+                        <td>This is Item number 5-26</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input type="checkbox"/>
+                        </td>
+                        <td>27</td>
+                        <td>This is Item number 1-27</td>
+                        <td>This is Item number 2-27</td>
+                        <td>This is Item number 3-27</td>
+                        <td>This is Item number 4-27</td>
+                        <td>This is Item number 5-27</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input type="checkbox"/>
+                        </td>
+                        <td>28</td>
+                        <td>This is Item number 1-28</td>
+                        <td>This is Item number 2-28</td>
+                        <td>This is Item number 3-28</td>
+                        <td>This is Item number 4-28</td>
+                        <td>This is Item number 5-28</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input type="checkbox"/>
+                        </td>
+                        <td>29</td>
+                        <td>This is Item number 1-29</td>
+                        <td>This is Item number 2-29</td>
+                        <td>This is Item number 3-29</td>
+                        <td>This is Item number 4-29</td>
+                        <td>This is Item number 5-29</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input type="checkbox"/>
+                        </td>
+                        <td>30</td>
+                        <td>This is Item number 1-30</td>
+                        <td>This is Item number 2-30</td>
+                        <td>This is Item number 3-30</td>
+                        <td>This is Item number 4-30</td>
+                        <td>This is Item number 5-30</td>
+                      </tr>
+
+                    </tbody>
+                  </table>
+                  <div class="pagination">
+                    <label class="disabled" for="table_radio_-1">&laquo; Previous</label>
+                    <label class="active" for="table_radio_0" id="table_pager_0">1</label>
+                    <label for="table_radio_1" id="table_pager_1">2</label>
+                    <label for="table_radio_2" id="table_pager_2">3</label>
+                    <label for="table_radio_3" id="table_pager_3">4</label>
+                    <label for="table_radio_4" id="table_pager_4">5</label>
+                    <label for="table_radio_1">Next &raquo;</label>
+                  </div>
+                  
+                  </div> -->
+
+
+        </div>
+        </div>
+
+
+
+
+  
+
+        <div class="container" >
+
+          <div id="mytable" style="display: none;">
+            
+           <div class="row">
+            <div class="col-3"></div>
+            <div class="col-3"></div>
+            <div class="col-3"></div>
+            <div class="col-3">
+              <a href="pdtCompare.html"> <button onclick="myFunction()" type="button" class="btn btn-outline-dark" style="margin-top: 5%; margin-right: 0%; float: right;" >Add to compare</button></a> 
+           </div>
+           </div>
+
+              <hr class="hr1">
+            <table class="table table-hover table-bordered " style="background-color: white;">
+              <thead style="border: 2px solid rgb(177, 175, 175); background-color: rgb(243, 247, 250);">
+              <tr>
+                <th>Sl.no</th>
+                <th>ProductName</th>
+                <th>Category</th>
+                <th>Brand</th>
+                <th>Sold By</th>
+                <th>Selling Price</th>
+                <th>LastUpdated on</th>
+              </tr>
+              </thead>
+              <tbody class="tbcontent">
+              <tr>
+                <td> <input type="checkbox" id="one"> 01</td>
+                <td> <a href="pdt.html"> 7500</a> </td>
+                <td>Traditional Blending</td>
+                <td> <a href="brand.html">Vitamix</a></td>
+                <td> Vitamix</td>
+                <td> $559.95</td>
+                <td> 2023-06-15 01:04:00</td>
+              </tr>
+                <tr>
+                <td> <input type="checkbox" id="two"> 02</td>
+                <td>7500 Super Bundle</td>
+                <td>Traditional Blending</td>
+                <td>Vitamix</td>
+                <td>Vitamix</td>
+                <td>$769.95</td>
+                <td> 2023-06-15 01:04:00</td>
+              </tr>
+
+              <td> <input type="checkbox" id="three"> 03</td>
+              <td>7500 with Aer™ Disc </td>
+              <td>Traditional Blending</td>
+              <td>Vitamix</td>
+              <td>Vitamix</td>
+              <td>-</td>
+              <td> 2023-06-15 01:04:00</td>
+            </tr>
+              <tr>
+                <td> <input type="checkbox" id="four"> 04</td>
+                <td>Certified Reconditioned 7500 </td>
+                <td>Single Serve Blending</td>
+                <td>Vitamix</td>
+                <td>Vitamix</td>
+                <td> $439.95</td>
+              <td> 2023-06-15 01:04:00</td>
+              </tr>
+               
+              <tr>
+              <td><input type="checkbox"> 05</td>
+              <td>Vitamix 7500 Blender Super Package, <br> with 32oz Dry Grains Jar and 2-20oz<br>To-Go Cups (Black)</td>
+              <td>Traditional Blending</td>
+              <td>Vitamix</td>
+              <td>Amazon</td>
+              <td>$749.99</td>
+              <td> 2023-06-15 01:04:00</td>
+
+            </tr>
+              <tr>
+                <td> <input type="checkbox"> 06</td>
+                <td>Vitamix 7500 Blender Super Package <br>with 2-20oz To-Go Cups</td>
+                <td>Traditional blending</td>
+                <td>Vitamix</td>
+                <td>Costco</td>
+                <td>Member's only Item</td>
+              <td> 2023-06-15 01:04:00</td>               
+              </tr>
+              <tr>
+                <td> <input type="checkbox"> 07</td>
+                <td>Ninja® Foodi® Power Blender Ultimate <br> System with XL Smoothie Bowl Maker <br> and Nutrient Extractor* </td>
+                <td>Immersion blending</td>
+                <td>Ninja</td>
+                <td>Ninja</td>
+                <td>$239.99</td>
+                <td>2023-06-15 11:18:02</td>
+              </tr>
+
+              <tr>
+                <td> <input type="checkbox"> 07</td>
+                <td>
+                  Ninja - Foodi Power Blender Ultimate <br> System 72-Oz. Blender, Smoothie Bowl Maker, <br>Food Processor - Platinum</td>
+                <td>Immersion blending</td>
+                <td>Ninja</td>
+                <td>BestBuy</td>
+                <td>$239.99</td>
+                <td>2023-06-15 11:18:02</td>
+              </tr>
+              <tbody>
+            </table>
+            <nav aria-label="Page navigation example">
+              <ul class="pagination justify-content-end">
+                <li class="page-item disabled">
+                  <a class="page-link" href="#" tabindex="-1">Previous</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#">Next</a>
+                </li>
+              </ul>
+            </nav>
+ 
+            </div>
+        </div>
+
+
+
+      </div>
+
+  </section>
+
+<script>
+  function myFunction() {
+  var x = document.getElementById("mytable");
+ 
+
+
+  if (x.style.display === "none" ) {
+    x.style.display = "block";
+ 
+  } else {
+    x.style.display = "none";
+ 
+  }
+}
+</script>
+
+  <script>
+  let sidebar = document.querySelector(".sidebar");
+  let closeBtn = document.querySelector("#btn");
+  let searchBtn = document.querySelector(".bx-search");
+  let hide = document.querySelector(".card");
+
+  closeBtn.addEventListener("click", ()=>{
+    sidebar.classList.toggle("open");
+    menuBtnChange();//calling the function(optional)
+  });
+
+  searchBtn.addEventListener("click", ()=>{ // Sidebar open when you click on the search iocn
+    sidebar.classList.toggle("open");
+    menuBtnChange(); //calling the function(optional)
+  });
+
+  // following are the code to change sidebar button(optional)
+  function menuBtnChange() {
+   if(sidebar.classList.contains("open")){
+     closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");//replacing the iocns class
+   }else {
+     closeBtn.classList.replace("bx-menu-alt-right","bx-menu");//replacing the iocns class
+   }
+  }
+  </script>
+ <script>
+  $(".checkbox-menu").on("change", "input[type='checkbox']", function() {
+   $(this).closest("li").toggleClass("active", this.checked);
+});
+
+$(document).on('click', '.allow-focus', function (e) {
+  e.stopPropagation();
+});
+ </script>
+
+ <script src="script.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>

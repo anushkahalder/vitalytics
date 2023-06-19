@@ -1,0 +1,1317 @@
+<!DOCTYPE html>
+<!-- Created by CodingLab |www.youtube.com/CodingLabYT-->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title>Product Content</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="../assets/vendor/daterangepicker/daterangepicker.css">
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+   </head>
+   
+<body>
+
+
+  <div class="sidebar">
+    <div class="logo-details">
+      <!-- <i class='bx bxl-c-plus-plus icon'></i> -->
+        <!-- <div class="logo_name" style="color: rgb(172, 10, 10);">VITALYTICS</div> -->
+        <i class='bx bx-menu' id="btn" ></i>
+    </div>
+    <ul class="nav-list">
+      <!-- <li>
+          <i class='bx bx-search' ></i>
+         <input type="text" placeholder="Search...">
+         <span class="tooltip">Search</span>
+      </li> -->
+      <li>
+        <a href="#">
+          <i class='bx bx-grid-alt'></i>
+          <span class="links_name">Dashboard</span>
+        </a>
+         <span class="tooltip">Dashboard</span>
+      </li>
+ 
+     <li>
+       <a href="index.html">
+         <i class='bx bx-chart' ></i>
+         <span class="links_name">Competitive Analysis</span>
+       </a>
+       <span class="tooltip">Competitive Analysis</span>
+     </li>
+     <li>
+       <a href="brand.html">
+         <i class='bx bx-pie-chart-alt-2' ></i>
+         <span class="links_name">Brand Analysis</span>
+       </a>
+       <span class="tooltip">Brand Analysis</span>
+     </li>
+     <li>
+       <a href="notifications.html">
+         <i class='bx bx-bell' ></i>
+         <span class="links_name">Notifications</span>
+       </a>
+       <span class="tooltip">Notifications</span>
+     </li>
+ 
+     <li>
+       <a href="#">
+         <i class='bx bx-heart' ></i>
+         <span class="links_name">Coupon Violation</span>
+       </a>
+       <span class="tooltip">Coupon Violation</span>
+     </li>
+     <li>
+       <a href="#">
+         <i class='bx bx-cog' ></i>
+         <span class="links_name">Admin Role</span>
+       </a>
+       <span class="tooltip">Admin Role</span>
+     </li>
+     <!-- <li class="profile">
+         <div class="profile-details">
+           <div class="name_job">
+             <div class="job">Collapse</div>
+           </div>
+         </div>         <i class='bx bx-log-out' id="log_out" ></i>
+     </li> -->
+    </ul>
+  </div>
+
+
+  <section class="home-section">
+ 
+<!-- ---------------Top Nav Bar-----------------------  -->
+<nav class="navbar sticky-top navbar-light bg-light">
+  <a class="navbar-brand" href="#">
+    
+    <img src="vitamixlogo.PNG" width="30" height="30" class="d-inline-block align-top" alt="">
+    <span style="color: rgb(177, 7, 7);">Vitalytics</span>
+  </a>
+  <form class="form-inline">
+    <!-- <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"> -->
+    <div class="cont">
+      <div class="searchInput">
+        <input type="text" placeholder="Search for any Product..">
+        <div class="resultBox">
+
+        </div>
+        <div class="icon"><i class="fas fa-search"></i></div>
+      </div>
+    </div>
+    
+
+    <button class="btn btn-outline-dark my-2 my-sm-0" type="submit" style="margin-right: 55px;">Search</button>
+    <div class="btn-group" style="padding-right: 10px;">
+
+      <a class="nav-item nav-link dropdown-toggle mr-md-2" href="#" id="bd-versions" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" style="color: black; font-size: 20px; padding-left: -20px;">
+    <!-- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbG9cPD_gIpfsj4CXj70sxhLIyskQbP87RMg&usqp=CAU" width="30" height="30" class="d-inline-block align-top" alt="" > -->
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4MmBOmXsxgjBhhfDh4FSeM9wsFRgC_2uPrE362dA&s" width="30" height="30" class="d-inline-block align-top" alt="" style="border-radius: 50px;"> <small>Admin</small>
+        
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Profile</a> 
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#">LogOut</a>
+      </div>
+ 
+    </div>
+    <a href="notifications.html" style="color: black; font-size: larger;"> <i class='bx bx-bell' style="padding-right: 10px;" ></i></a>
+   
+  
+  </form>
+</nav>
+
+<!-- ----------------Bottom Nav Bar-------------------------- -->
+<nav class="navbar fixed-bottom navbar-light bg-light" style="margin-left: 5%;">
+  <a class="navbar-brand" href="#" style="float: right;"></a>
+  <span class="navbar-text" style="color: black;">
+    Last updated: 16-06-2023 17:00
+  </span>
+</nav>
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-3">
+                  <!-- <div class="cont" style="width: 100%; margin-left: 33%;">
+                    <div class="searchInput">
+                      <input type="text" placeholder="Search for any Product..">
+                      <div class="resultBox">
+              
+                      </div>
+                      <div class="icon"><i class="fas fa-search"></i></div>
+                    </div>
+                  </div> -->
+                </div>
+                <div class="col-3"></div>
+                <div class="col-3"></div>
+      
+                <div class="col-3">
+                  <a href="pdtcomp1.html"> <button type="button" class="btn btn btn-dark" style="margin-top: 14%; margin-left: 23%; float: right;" >Add to Compare</button></a>
+                </div>
+    
+
+
+              </div>
+
+            <div class="row" style="padding-top: 30px !important;">
+                <div class="col-4">
+      
+                  <div class="card" style="width: 18rem; border-radius: 12px;" >
+                    <img class="card-img-top" src="https://www.vitamix.com/media/catalog/product/cache/df553e0882f1b5c97ab40e474a7e7b60/g/s/gs-front-64oz-intl.jpg" alt="Card image cap" style="border-radius: 12px;">
+                    <div class="card-body">
+                      <h6 class="card-title">7500  <span><small>$559.95</small></span> </h6>
+                      <p class="card-text">  4.7 (1091) <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                      <p class="card-text">  Traditional Blending</p>
+                    </div>
+                  
+                      <button type="button" class="btn btn-light"><a href="https://www.vitamix.com/us/en_us/shop/blenders/7500">View from Website</a> </button>
+                   
+                   
+                    <!-- <ul class="list-group list-group-flush">
+                         <span style="padding-left: 15px;">  Latest Reviews  </span> 
+                      <li class="list-group-item" style="font-size: small;">If you’re looking for the best, you found it. <br>I have been in love with cooking all of my life...   </li>
+                      <li class="list-group-item" style="font-size: small;">Super Useful! <br>My sister gifted me a lovely red reconditioned...</li>
+                      <li class="list-group-item" style="font-size: small;">Really impressed! <br> I've known for years that the Vitamix blender was a good blender... </li>
+                    </ul> -->
+
+                    <div class="card-footer">
+                      <small class="text-muted">Reviews updated 3 mins ago</small>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="col-8">
+                    <!-- //////////////// tab headers - 3 //////////////// -->
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item">
+                          <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true" style="color: black !important;">Overview</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false"  style="color: black !important;">Discounts</a>
+                        </li>
+
+                        <li class="nav-item" style="display: none;">
+                          <a class="nav-link" id="retailer-tab" data-toggle="tab" href="#retailer" role="tab" aria-controls="retailer" aria-selected="false"  style="color: black !important;">Retailers</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" id="variant-tab" data-toggle="tab" href="#variant" role="tab" aria-controls="variant" aria-selected="false"  style="color: black !important;">Variants</a>
+                        </li>
+
+                        <li class="nav-item">
+                          <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false"  style="color: black !important;">Rating and Review</a>
+                        </li>
+                      </ul>
+                         
+
+                      <!-- ////////////////////////////////////Tab contents////////////////////////////// -->
+                      <div class="tab-content" id="myTabContent" >
+
+                        <!-- ////////////////////////////////// SELLING PRICE////////////////////////////////////// -->
+                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab" style="background-color: #f3f3f3 !important; ">
+                                
+                       
+                                               <!-- //////////////////////image-price trend analysis////////////// -->
+                            <div class="row" style="background-color: white; margin-top: 10px; border-radius: 12px;">
+
+                                <div class="col-6">
+
+                                <br>
+                                <span style="padding-left: 10px;"> Price Trend Deviations</span>
+                                <br>
+                                <span style="font-size: small; padding-left: 10px;">High -  <i class="fa-solid fa-arrow-up" style="color: rgb(16, 226, 16);"></i></span>
+                                <span style="font-size: small; padding-left: 10px;">Low - <i class="fa-sharp fa-solid fa-arrow-down" style="color:rgb(238, 48, 48);"></i></span>
+                                <!-- <span style="font-size: small; padding-left: 10px;">Selling Price: $ 219.99</span> -->
+
+                                </div>
+                     
+                                <div class="col-3">
+                                   <!-- Small button groups (default and split) -->
+                                      <div class="btn-group" style="margin-top: 20%; margin-left: 10%; background-color: darkgray ;" >
+                                        <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                          Variants
+                                        </button>
+                                        <div class="dropdown-menu">
+                                          <a class="dropdown-item" href="#">7500</a>
+                                          <a class="dropdown-item" href="#">Certified Reconditioned 7500</a>
+                                          <a class="dropdown-item" href="#">7500 Super Bundle</a>
+                                          <a class="dropdown-item" href="#">7500 with Aer Disc</a>
+                                          <a class="dropdown-item" href="#">Vitamix 7500 Blender Super Package with 2- 20oz To-Go Cups</a>
+                                          <a class="dropdown-item" href="#">Vitamix 7500 Blender Super Package, with 32oz Dry Grains Jar and 2-20oz To-Go Cups (Black)</a>
+                                        </div>
+                                      </div>
+                                </div>
+                                <div class="col-3">
+
+                                    <nav aria-label="Page navigation example" style="padding-top: 30px;">
+                                        <ul class="pagination justify-content-end">
+                                          <!-- <li class="page-item disabled">
+                                            <a class="page-link" href="#" tabindex="-1">Previous</a>
+                                          </li> -->
+                                          <li class="page-item" ><a class="page-link" href="#" style="color: black !important;">1D</a></li>
+                                          <li class="page-item active" ><a class="page-link" href="#"  style="background-color: black !important; color: white;">1W</a></li>
+                                          <li class="page-item"><a class="page-link" href="#" style="color: black !important;">1Y</a></li>
+                                          <!-- <li class="page-item">
+                                            <a class="page-link" href="#">Next</a>
+                                          </li> -->
+                                        </ul>
+                                      </nav>
+
+                                </div>                           
+                                <img src="sellingbar2.png" class="img-fluid" alt="Responsive image" style="border-radius: 12px; margin-left: 10%; height: 300px;">
+                                
+                            </div>
+
+
+                                               <!-- ////////////////////// Widgets  /////////////////////////////////////// -->
+
+                            <div style="background-color: white; border-radius: 12px ; margin-top: 10px; margin-left: -16px; margin-right: -16px;  padding-bottom: 20px;  margin-bottom: 20px;" >
+
+                                <div class="row" style="padding: 20px;" >
+                                    <div class="card-group">
+                                        <div class="card" style="background-color: rgba(208, 253, 148, 0.514); border-radius: 12px;">
+                                        <div class="card-body">
+                                            <div class="card-title" style="font-size: small;"> <b>Warranty Details </b> </div>
+                                            <p class="card-text" style="font-size: small; padding: -50px; color: rgb(8, 8, 8);" > <br>7 yrs (Free) </p>
+                                            <i class="fa-solid fa-shield" style="float:right; font-size: 30px;"></i>
+                                        </div>
+                                        </div>
+                                        <div class="card" style="background-color: aliceblue;border-radius: 12px;">
+                                        <div class="card-body">
+                                            <div class="card-title" style="font-size: small;"> <b>Extended Warranty </b> </div>
+                                            <p class="card-text" style="font-size: small; padding: -50px; color: rgb(8, 8, 8);" > <br> 3 yrs ($75.00) </p>
+                                            <i class="fa-solid fa-shield-heart" style="float:right; font-size: 30px;"></i>
+                                            
+                                        </div>
+                                        </div>
+                                        <div class="card" style="background-color: bisque;border-radius: 12px;">
+                                        <div class="card-body">
+                                            <div class="card-title" style="font-size: small;"> <b>Availability Details </b> </div>
+                                            <p class="card-text"  style="font-size: small; padding: -50px; color: rgb(8, 8, 8);" > <br> In Stock</p>
+                                            <i class="fa-solid fa-shop" style="float:right; font-size: 30px;"></i>
+                                        </div>
+                                        </div>
+                                        <div class="card" style="background-color: rgba(249, 255, 164, 0.644);border-radius: 12px;">
+                                            <div class="card-body">
+                                            <div class="card-title" style="font-size: small;"> <b>Shipping Details </b> </div>
+                                            <p class="card-text"  style="font-size: small; color: rgb(12, 12, 12);"> <br> Eligible for FREE shipping</p>
+                                            <i class="fa-solid fa-truck-fast" style="float:right; font-size: 30px;"></i>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="row">
+                                    <div class="col-6" style="background-color:linen;margin-left: 30px; margin-right: 10px; padding: 20px; height: 90px; max-width:46%; border-radius: 12px; box-shadow:0 2px 3px rgba(0, 0, 0, 0.3);">
+                                            <p class="card-text" style="font-size: small; "> <b>MoneyBack Guarantee</b> <br> <i class="fa-solid fa-house-chimney" style="float:right; font-size: 30px;"></i></p> 
+                                    </div>
+                                    <div class="col-6" style="background-color: lavender; padding: 20px; height: 90px; max-width:46%; border-radius: 12px; box-shadow:0 2px 3px rgba(0, 0, 0, 0.3);">
+                                        <p class="card-text" style="font-size: small; "> <b>Payment Methods </b> <br> Credit Card | PayPal | 4 interest-free payments or as low as $51/mo with Affirm <i class="fa-solid fa-credit-card" style="float:right; font-size: 30px;"></i></p>
+                                    </div>
+
+                                </div>
+                                
+                            </div>                                      
+                       </div>
+
+                       <!-- //////////////////////////// DISCOUNT /////////////////////////////////////// -->
+                        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab" style="background-color: #f3f3f3 !important;">
+                            <!-- //////////////////////image-price trend analysis////////////// -->
+                            <div class="row" style="background-color: white; margin-top: 10px; border-radius: 12px; display:none">
+                            <div class="col-6">
+                            <br>
+                            <span style="padding-left: 10px;"> All variant's Discounted Price Trend </span>
+                            <br>
+                            <span style="font-size: small; padding-left: 10px;">High -  <i class="fa-solid fa-arrow-up" style="color: rgb(16, 226, 16);"></i></span>
+                            <span style="font-size: small; padding-left: 10px;">Low -  <i class="fa-sharp fa-solid fa-arrow-down" style="color:rgb(238, 48, 48);"></i></span>
+                            <br>
+                            </div>
+                            <div class="col-2"></div>
+                            <div class="col-4">
+                                <nav aria-label="Page navigation example" style="padding-top: 30px;">
+                                    <ul class="pagination justify-content-end">
+                                        <!-- <li class="page-item disabled">
+                                        <a class="page-link" href="#" tabindex="-1">Previous</a>
+                                        </li> -->
+                                        <li class="page-item" ><a class="page-link" href="#" style="color: black !important;">1D</a></li>
+                                        <li class="page-item active" ><a class="page-link" href="#"  style="background-color: black !important; color: white;">1W</a></li>
+                                        <li class="page-item"><a class="page-link" href="#" style="color: black !important;">1Y</a></li>
+                                        <!-- <li class="page-item">
+                                        <a class="page-link" href="#">Next</a>
+                                        </li> -->
+                                    </ul>
+                                    </nav>
+
+                            </div>                       
+                            <img src="discountbar.png" class="img-fluid" alt="Responsive image" style="border-radius: 12px; height: 300px; margin-left: 10%;">
+                            
+                            </div>
+                            <!-- ///////////////////////////////WIDGETS//////////////////////////////////////// -->
+                            <div class="row" style="background-color: white; margin-top: 10px;   border-radius: 12px;">
+                                <p style="font-size: small; color: gray; padding-top: 20px; padding-left: 20px;"> Offers and Promotions</p>
+                                    <div class="row" style="padding: 0 20px 20px 20px;" >
+                                        <div class="card-group">
+                                            <div class="card" style="background-color: rgba(208, 253, 148, 0.514); border-radius: 12px; height: 80%;" >
+                                            <div class="card-body">
+                                                <span class="card-title" style="font-size: small;"> <b>$70 off the FoodCycler FC-50 </b> <br> by Vitamix</span>
+                                                <span class="card-text" style="font-size: small;  color: rgb(8, 8, 8);" > <br> </span>
+                                            </div>
+                                            </div>
+                                            <div class="card" style="background-color: aliceblue;border-radius: 12px; height: 80%; visibility:hidden;" >
+                                            <div class="card-body">
+                                                <span class="card-title" style="font-size: small;"> <b>UPTO 75% OFF </b> </span>
+                                                <span class="card-text" style="font-size: small;  color: rgb(8, 8, 8);" > <br> MemorialDay Sale </span>
+                                                
+                                            </div>
+                                            </div>
+                                            <div class="card" style="background-color: bisque;border-radius: 12px; visibility: hidden;  height: 40%;">
+                                            <div class="card-body">
+                                                <div class="card-title" style="font-size: small;"> <b>Availability Details </b> </div>
+                                            </div>
+                                            </div>
+                                            <div class="card" style="background-color: rgba(249, 255, 164, 0.644);border-radius: 12px;height: 40%; visibility: hidden;">
+                                                <div class="card-body">
+                                                <div class="card-title" style="font-size: small;"> <b>Shipping Details </b> </div>
+                                                <i><br><br></i>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+
+
+
+
+                        <!-- //////////////////////RATINGS AND REVIEWS/////////////////////////////////////////// -->
+                        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab" style="background-color: #f3f3f3 !important;">
+                        
+                        <!-- <div class="row">
+
+
+                          <div class="card-deck" style="margin-top: 10px; margin-left: 40px;" >
+                            <div class="card"  style="height: 150px;border: 9px solid rgba(0, 0, 255, 0.226);" id="vitamix">
+                              <img class="card-img-top" src="https://findlogovector.com/wp-content/uploads/2018/07/vitamix-logo-vector.png" alt="Card image cap" style="width: 150px; height: 50px; margin-left: 8px; margin-top: 25px;">
+                              <div class="card-body" style="padding: 1rem; " >
+                                  <small class="text-muted">Rated <br><b>4.7(1091)</b><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star-half-stroke"></i></small>                                                          
+                              </div>
+                            </div>
+                            <div class="card" style="height: 150px; border: none;" id="costco">
+                              <img class="card-img-top" src="https://1000logos.net/wp-content/uploads/2021/04/Costco-logo.png" alt="Card image cap" style="width: 150px; height: 50px; margin-left: 8px; margin-top: 25px;">
+                              <div class="card-body" style="padding: 1rem;">
+                                 <small class="text-muted">Rated <br><b>4.5(1583)</b><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star-half-stroke"></i></small> 
+                              </div>
+                            </div>
+                            <div class="card" style="height: 150px; border: none;" id="amazon">
+                              <img class="card-img-top" src="https://logos-world.net/wp-content/uploads/2020/04/Amazon-Logo-2000-present.jpg" alt="Card image cap" style="width: 150px; height:50px; margin-left: 8px; margin-top: 25px;">
+                              <div class="card-body" style="padding: 1rem;">
+                             <small class="text-muted">Rated <br> <b>4.5(63)</b><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star-half-stroke"></i></small> 
+
+                              </div>
+                            </div>
+
+                          </div>
+                            
+
+                        </div> -->
+                           
+
+
+                        <!-- //////////////////////////// Vitamix///////////////////////// -->
+                        <div class="row" style="margin-top: 20px;">
+                          <div class="accordion" id="accordionExample1" >
+ 
+                            <div class="card" style="width: 148vb;  ">
+                              <div class="card-header" id="headingOne">
+                                <h5 class="mb-0">
+                                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+ 
+                                    <small class="text-muted">Rated<b>4.7(1091)</b>  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star-half-stroke"></i></small>
+                                    <span style="padding-left: 300px; color: black; text-decoration: none;font-size: medium;">Vitamix</span>
+
+                                  </button>
+                                </h5>
+                              </div>
+                              <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample1">
+                                <div class="card-body">
+
+                                  <div class="row">
+                                    <div class="row" id="maps" >
+                                      <div class="col-5" style="background-color: white; margin-top: 10px ; margin-left: 50px; border-radius: 12px;">
+                                          <img src="s8.png" class="img-fluid" alt="Responsive image" >
+                                      </div>
+                                      <div class="col-1"></div>
+                                      <!-- <div class="col-5" style="background-color: white; margin-top: 10px; border-radius: 12px;  ">
+                                          <img src="rating.PNG" class="img-fluid" alt="Responsive image">
+                                      </div> -->
+                                      <div class="col-1"></div>
+                                  </div>
+                                    </div>
+                                    <div class="row" style="background-color: white; margin-top: 10px;  padding: 10px; border-radius: 12px;">
+          
+          
+                                        <div class="col" style="margin-top: 20px;">
+                                            <span style="font-size: medium; color: gray;   padding-left: 20px;"> Reviews</span>
+                                        </div>
+
+                                        <div class="col">
+                                            <div class="dropdown" style="margin: 0px ; ">
+                                                <div class="select" style="width: 130px;margin-bottom: 10px; float: right; background-color: rgba(238, 236, 236, 0.534); font-size: small;">
+                                                  <span class="selected">Top Reviews</span>
+                                                  <div class="caret"></div>
+                                                </div>
+                                                <ul class="menu" style="box-shadow: 1px 4px 2px rgba(0, 0, 0, 0.3);;">
+                                                  <li>Highest to Lowest</li>
+                                                  <li>Lowest to Highest</li>
+ 
+                                  
+                                                </ul>
+                                              </div>
+                
+          
+              
+            
+                                        </div>
+          
+                                        
+          
+                                
+          
+                                        <div class="card">
+          
+                                            <div class="card-body">
+                                              <blockquote class="blockquote mb-0">
+                                                <span style="font-size: small"><b>If you’re looking for the best, you found it.</b></span>
+                                                <span style="font-size:8px; float: right;">  <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>    2 months ago   </span>
+                                                <p style="font-size: 10px;" >I have been in love with cooking all of my life.
+                                                  I watched my mother and grandmother bake cakes from scratch and cook big family meals, watched Julia Child and Yan Can Cook, Justin Wilson, all of the PBS cooking shows, etc. so I am serious when I say, I have owned and wasted $$ on many blenders through the last 40 + years</p>
+                                              </blockquote>
+                                            </div>
+                                          </div>
+          
+                                          <div class="card">
+          
+                                            <div class="card-body">
+                                              <blockquote class="blockquote mb-0">
+                                                <span style="font-size: small"><b>Super Useful!</b></span>
+                                                <span style="font-size:8px; float: right;">  <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>    3 months ago   </span>
+
+                                                <p style="font-size: 10px;" >My sister gifted me a lovely red reconditioned Legacy 7500 Vitamix a little over 3 years ago. It has been great for preparing daily smoothies, soups as well as various recipes for a family member who is gluten free & dairy free.</p>
+                                              </blockquote>
+                                            </div>
+                                          </div>
+          
+                                          <div class="card">
+          
+                                            <div class="card-body">
+                                              <blockquote class="blockquote mb-0">
+                                                <span style="font-size: small"><b>So nice, I bought it Thrice!</b></span>
+                                                <span style="font-size:8px; float: right;">  <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>    3 months ago   </span>
+
+                                                <p style="font-size: 10px;" >My first exposure to Vitamix Blenders was at my internship in High School. I was so impressed by the quality of the Green Juice they would make that I bought my own Vitamix Blender with my first paycheck. Now, I own 3 of them. These Blenders are built to last.</p>
+                                              </blockquote>
+                                            </div>
+                                          </div>
+          
+                                          <div class="card">
+          
+                                            <div class="card-body">
+                                              <blockquote class="blockquote mb-0">
+                                                <span style="font-size: small"><b>Really impressed!!</b></span>
+                                                <span style="font-size:8px; float: right;">  <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>    3 months ago   </span>
+
+                                                <p style="font-size: 10px;" >I've known for years that the Vitamix blender was a good blender but felt I couldn't really justify buying one, because I already had a much cheaper blender. I thought there really couldn't be that much difference. Finally made the move and bought the Vitamix 7500</p>
+                                              </blockquote>
+                                            </div>
+                                          </div>
+                            
+          
+          
+          
+                                    </div>
+                                   
+
+
+
+
+
+                                </div>
+                              </div>
+                            </div>
+ 
+                          </div>
+                        </div>
+                          
+
+                        <!-- ////////////////////////////Costco///////////////////////////////////// -->
+                        <div class="row" style="margin-top: 20px;">
+                          <div class="accordion" id="accordionExample">
+ 
+                            <div class="card" style="width: 148vb;">
+                              <div class="card-header" id="headingTwo">
+                                <h5 class="mb-0">
+                                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <small class="text-muted">Rated <b>4.5(1583)</b>  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star-half-stroke"></i></small> 
+                                    <span style="padding-left: 300px; color: black; text-decoration: none;font-size: medium;">Costco</span>
+                                  </button>
+                                </h5>
+                              </div>
+                              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                <div class="card-body">
+
+                                  <div class="row">
+                                    <div class="row" id="maps" >
+                                      <div class="col-5" style="background-color: white; margin-top: 10px ; margin-left: 50px; border-radius: 12px;">
+                                          <img src="costcoReviews.png" class="img-fluid" alt="Responsive image" >
+                                      </div>
+                                      <div class="col-1"></div>
+                                      <!-- <div class="col-5" style="background-color: white; margin-top: 10px; border-radius: 12px;  ">
+                                          <img src="rating.PNG" class="img-fluid" alt="Responsive image">
+                                      </div> -->
+                                      <div class="col-1"></div>
+                                  </div>
+                                    </div>
+                                    <div class="row" style="background-color: white; margin-top: 10px;  padding: 10px; border-radius: 12px;">
+          
+          
+                                        <div class="col" style="margin-top: 20px;">
+                                            <span style="font-size: medium; color: gray;   padding-left: 20px;"> Reviews</span>
+                                        </div>
+                                        <!-- <div class="col">
+
+
+                                          <label for="start">Start date:</label>
+                                          <input type="date" id="start" name="trip-start"
+                                                 value="2018-07-22"
+                                                 min="2018-01-01" max="2018-12-31">
+
+
+                                        </div>
+                                        <div class="col">
+                                          <label for="start">End date:</label>
+                                          <input type="date" id="start" name="trip-start"
+                                                 value="2018-07-22"
+                                                 min="2018-01-01" max="2018-12-31">
+                                          
+                                        </div> -->
+                                        <div class="col">
+                                            <div class="dropdown" style="margin: 0px ; ">
+                                                <div class="select" style="width: 130px;margin-bottom: 10px; float: right; background-color: rgba(238, 236, 236, 0.534); font-size: small;">
+                                                  <span class="selected">Top Reviews</span>
+                                                  <div class="caret"></div>
+                                                </div>
+                                                <ul class="menu" style="box-shadow: 1px 4px 2px rgba(0, 0, 0, 0.3);;">
+                                                  <li>Highest to Lowest</li>
+                                                  <li>Lowest to Highest</li>
+ 
+                                  
+                                                </ul>
+                                              </div>
+                
+          
+              
+            
+                                        </div>
+          
+                                        
+          
+                                
+          
+                                        <div class="card">
+          
+                                            <div class="card-body">
+                                              <blockquote class="blockquote mb-0">
+                                                <span style="font-size: small"><b>Vitamix is still Number 1 in the BLENDING WORLD!</b></span>
+                                                <span style="font-size:8px; float: right;"><i class="fa-solid fa-star"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></i><i class="fa-solid fa-star"></i>  2 days ago</span>
+                                                <p style="font-size: 10px;" >This is our second Vitamix in nearly 10 years. Lets just say it’s the iPhone of blenders … Simple yet so powerful. There is a reason restaurants and ice cream shops use Vitamix!</p>
+                                              </blockquote>
+                                            </div>
+                                          </div>
+          
+                                          <div class="card">
+          
+                                            <div class="card-body">
+                                              <blockquote class="blockquote mb-0">
+                                                <span style="font-size: small"><b>Worth the investment</b></span>
+                                                <span style="font-size:8px; float: right;"> <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i> 8 days ago </span>
+                                                <p style="font-size: 10px;" >I purchased the Vitamix because I wanted whole food juicing rather than leaaving all the fibre behind. I have used the product for about a month and love the product. Noice level of the blender is tolerable even at its highest speed. Much to be said for my family of selective eaters who enjoy the juices daily.
+                                                </p>
+                                              </blockquote>
+                                            </div>
+                                          </div>
+          
+                                          <div class="card">
+          
+                                            <div class="card-body">
+                                              <blockquote class="blockquote mb-0">
+                                                <span style="font-size: small"><b>Smoothie machine!</b></span>
+                                                <span style="font-size:8px; float: right;"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>8 days ago </span>
+                                                <p style="font-size: 10px;" >I primarily use this for smoothies and it is so smooth and much quieter than my other high speed blender. I have not tried the dry blend yet but I know I will.</p>
+                                              </blockquote>
+                                            </div>
+                                          </div>
+          
+                                          <div class="card">
+          
+                                            <div class="card-body">
+                                              <blockquote class="blockquote mb-0">
+                                                <span style="font-size: small"><b>The New Breed</b></span>
+                                                <span style="font-size:8px; float: right;"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>a month ago </span>
+                                                <p style="font-size: 10px;" >More powerful and still use it regularly. The controls are very intuitive, it's easy to use, and always yields good results. I use it often for smoothing out soups in the pot or to make quick emulsions in containers that I can pop right into the fridge.</p>
+                                              </blockquote>
+                                            </div>
+                                          </div>
+                            
+          
+          
+          
+                                    </div>
+                                   
+
+
+
+
+
+                                </div>
+                              </div>
+                            </div>
+ 
+                          </div>
+                        </div>
+
+
+
+                        <!-- //////////////////////////////////////////Amazon//////////////////////// -->
+                        <div class="row" style="margin-top: 20px;">
+                          <div class="accordion" id="accordionExample3">
+ 
+                            <div class="card" style="width: 148vb;">
+                              <div class="card-header" id="headingThree">
+                                <h5 class="mb-0">
+                                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+
+
+
+
+                                    <small class="text-muted">Rated <b>4.5(63)</b><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star-half-stroke"></i></small> 
+                                    <span style="padding-left: 320px; color: black; text-decoration: none;font-size: medium;">Amazon</span>                        
+                                  </button>
+                                </h5>
+                              </div>
+                              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample3">
+                                <div class="card-body">
+
+                                  <div class="row">
+                                    <div class="row" >
+                                      <div class="col-5" style="background-color: white; margin-top: 10px ; margin-left: 50px; border-radius: 12px;">
+                                          <img src="amazonRatings.png" class="img-fluid" alt="Responsive image" >
+                                      </div>
+                                      <div class="col-1"></div>
+                                      <!-- <div class="col-5" style="background-color: white; margin-top: 10px; border-radius: 12px;  ">
+                                          <img src="rating.PNG" class="img-fluid" alt="Responsive image">
+                                      </div> -->
+                                      <div class="col-1"></div>
+                                  </div>
+                                    </div>
+                                    <div class="row" style="background-color: white; margin-top: 10px;  padding: 10px; border-radius: 12px;">
+          
+          
+                                        <div class="col" style="margin-top: 20px;">
+                                            <span style="font-size: medium; color: gray;   padding-left: 20px;"> Reviews</span>
+                                        </div>
+                                        <!-- <div class="col">
+
+
+                                          <label for="start">Start date:</label>
+                                          <input type="date" id="start" name="trip-start"
+                                                 value="2018-07-22"
+                                                 min="2018-01-01" max="2018-12-31">
+
+
+                                        </div>
+                                        <div class="col">
+                                          <label for="start">End date:</label>
+                                          <input type="date" id="start" name="trip-start"
+                                                 value="2018-07-22"
+                                                 min="2018-01-01" max="2018-12-31">
+                                          
+                                        </div> -->
+                                        <div class="col">
+                                            <div class="dropdown" style="margin: 0px ; ">
+                                                <div class="select" style="width: 130px;margin-bottom: 10px; float: right; background-color: rgba(238, 236, 236, 0.534); font-size: small;">
+                                                  <span class="selected">Top Reviews</span>
+                                                  <div class="caret"></div>
+                                                </div>
+                                                <ul class="menu" style="box-shadow: 1px 4px 2px rgba(0, 0, 0, 0.3);;">
+                                                  <li>Highest to Lowest</li>
+                                                  <li>Lowest to Highest</li>
+ 
+                                  
+                                                </ul>
+                                              </div>
+                
+          
+              
+            
+                                        </div>
+          
+                                        
+          
+                                
+          
+                                        <div class="card">
+          
+                                            <div class="card-body">
+                                              <blockquote class="blockquote mb-0">
+                                                <span style="font-size: small"><b>Can do anything!</b></span>
+                                                <span style="font-size:8px; float: right;"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>February 3, 2022</span>
+                                                <p style="font-size: 10px;" > Make your own smoothies and save money. Even makes soup (hot).Love the smaller mixer Very useful if you want to blend fir 1 or 2 persons</p>
+                                              </blockquote>
+                                            </div>
+                                          </div>
+          
+                                          <div class="card">
+          
+                                            <div class="card-body">
+                                              <blockquote class="blockquote mb-0">
+                                                <span style="font-size: small"><b>Expensive but nice</b></span>
+                                                <span style="font-size:8px; float: right;"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>July 8, 2021</span>
+                                                <p style="font-size: 10px;" >Love the smaller mixer Very useful if you want to blend fir 1 or 2 personsLove the smaller mixer Very useful if you want to blend fir 1 or 2 persons</p>
+                                              </blockquote>
+                                            </div>
+                                          </div>
+<!--           
+                                          <div class="card">
+          
+                                            <div class="card-body">
+                                              <blockquote class="blockquote mb-0">
+                                                <span style="font-size: small"><b>Accept Return Please</b></span>
+                                                <span style="font-size:8px; float: right;"><i class="fa-solid fa-star"><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>June 10, 2021</span>
+                                                <p style="font-size: 10px;" >Blender stopped working. Tried to return. Amazon system is saying the return period has lapsed. Now I’m stuck with a blender that no longer works and it hasn’t even been that long. Does Amazon and Vitamix realize how much I spent. OMG!!!</p>
+                                              </blockquote>
+                                            </div>
+                                          </div> -->
+          
+                                          <div class="card">
+          
+                                            <div class="card-body">
+                                              <blockquote class="blockquote mb-0">
+                                                <span style="font-size: small"><b>Vitamix blends everything smoothly and perfectly.</b></span>
+                                                <span style="font-size:8px; float: right;"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>December 18, 2019</span>
+                                                <p style="font-size: 10px;" >Great product. Works extremely well blends everything smoothly and perfectly. The controls are very intuitive, it's easy to use, and always yields good results. I use it often for smoothing out soups in the pot or to make quick emulsions in containers that I can pop right into the fridge.</p>
+                                              </blockquote>
+                                            </div>
+                                          </div>
+
+                                          <div class="card">
+          
+                                            <div class="card-body">
+                                              <blockquote class="blockquote mb-0">
+                                                <span style="font-size: small"><b>Love my vitamix</b></span>
+                                                <span style="font-size:8px; float: right;"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>December 18, 2019</span>
+                                                <p style="font-size: 10px;" >it was a gift for my mom that had broken her blender.... well blends everything smoothly and perfectly it is the best quality and quieter than the lesser models</p>
+                                              </blockquote>
+                                            </div>
+                                          </div>
+                            
+          
+          
+          
+                                    </div>
+                                   
+
+
+
+
+
+                                </div>
+
+
+                              </div>
+                            </div>
+ 
+                          </div>
+                        </div>
+
+
+
+
+                        </div>
+
+
+
+                       <!-- ////////////////////////////////// RETAILER PRICE////////////////////////////////////// -->
+                        <div class="tab-pane fade" id="retailer" role="tabpanel" aria-labelledby="retailer-tab" style="background-color: #f3f3f3 !important; ">
+                                
+
+
+                          <!-- ////////////////////////Retailer comparison cards//////////////////////////////// -->
+                          <div class="row" style="background-color: white; padding: 2%; margin-top: 10px;">
+                           
+                            <div class="Col-2">
+                              <span style=" border-radius: 4px; background-color: cornsilk; box-shadow: 2px 2px 2px rgba(136, 124, 124, 0.432);padding:4%;">Amazon</span> 
+                              <img class="rounded float-left" src="https://m.media-amazon.com/images/I/61brIKjIxTL._AC_SX522_.jpg" alt="Abvshs" style="width: 100px; height: 150px; margin-top: 12px;">
+                              <br><br><br><br><br><br> <br><br><br><br>
+                              <span style="font-size: small;"><b>Selling price: $749.99</b></span>
+
+                            </div>
+
+                            <div class="col-4">
+                              <div>
+                               <span style="text-align: center; font-size: small;"><b>Vitamix 7500 Blender Super Package, with 32oz Dry Grains Jar and 2-20oz To-Go Cups (Black)</b></span><br>
+                               
+                               <div style="background-color: rgba(255, 248, 220, 0.418);  padding: 5%; margin: 1%; border-radius: 12px;">
+                                <span style=" text-decoration: underline; font-size: small;"> PRODUCT DETAILS</span>
+                                <ul style="list-style-type: none; font-size: small;">
+                                  <li >Warranty: NA </li>
+                                  <li>Shipping; $0.00</li>
+                                  <li>100% refund - 14days return</li>
+                                  <li>Pay by UPI/Debit/credit cards</li>
+                                </ul>
+                               </div>
+
+                              </div>
+
+                            </div>
+
+
+                            <div class="col-5">
+                              <div class="discounts" style="height: 230px; border: 2px dashed rgb(218, 22, 22); padding-right: 5%; padding-left: 20px;">
+                                <span style="font-size: small;"> <b>Discounts and promotions</b></span> <br>
+                                <span style="font-size: small;">Discounted Price - <b>$749.99</b></span> <br> <br>
+                                <!-- <ul>
+                                  <li>
+                                    <span style="font-size: small;">Gift Mom the Real Thing. Get up to $100 off Vitamix® blenders, just in time for Mother's Day. Sale ends 5/14.
+                                      FREE Gift with Purchase.</span>
+                                  </li>
+                                  <li><span style="font-size: small;">Get with your purchase of $289.95 or more. Add to cart and use code APRON at checkout.</span></li>
+                                </ul> -->
+                                
+                                  
+                              </div>
+
+                            </div>
+                          </div>
+                          
+                          <!-- ////////////////////////Retailer comparison cards//////////////////////////////// -->
+                          <div class="row" style="background-color: white; padding: 2%; margin-top: 10px;">
+  
+                            <div class="Col-2">
+                              <span style=" border-radius: 4px; background-color: cornsilk; box-shadow: 2px 2px 2px rgba(136, 124, 124, 0.432);padding:4%;">Costco</span> 
+                              <img class="rounded float-left" src="https://images.costco-static.com/ImageDelivery/imageService?profileId=12026540&itemId=920795-847&recipeName=680" alt="Abvshs" style="width: 100px; height: 150px; margin-top: 12px;">
+                              <br><br><br><br><br><br> <br><br><br><br>
+                              <span style="font-size: small;"><b>Member's only Item</b></span>
+
+                            </div>
+
+                            <div class="col-4">
+                              <div>
+                                <span style="text-align: center; font-size: small;"><b>Vitamix 7500 Blender Super Package with 2- 20oz To-Go Cups</b></span><br>
+                                
+                                <div style="background-color: rgba(255, 248, 220, 0.418);  padding: 5%; margin: 1%; border-radius: 12px;">
+                                <span style=" text-decoration: underline; font-size: small;"> PRODUCT DETAILS</span>
+                                <ul style="list-style-type: none; font-size: small;">
+                                  <li >Warranty - NA</li>
+                                  <li>Shipping - $9.99</li>
+                                  <li>100% refund - 30 days return</li>
+                                  <li>Pay by Credit/debit/shop cards</li>
+                                </ul>
+                                </div>
+
+                              </div>
+
+                            </div>
+
+
+                            <div class="col-5">
+                              <div class="discounts" style="height: 230px; border: 2px dashed rgb(218, 22, 22); padding-right: 5%; padding-left: 20px;">
+                                <span style="font-size: small;"> <b>Discounts and promotions</b></span> <br>
+                                <span style="font-size: small;">Discounted Price - <b>NA</b></span> <br> <br>
+                                <!-- <ul>
+                                  <li>
+                                    <span style="font-size: small;">$120 manufacturer's savings is valid 4/28/23 through 5/25/23. While supplies last. Limit 5 per member. Terms & Conditions</span>
+                                  </li>
+                                  <li><span style="font-size: small;">Get with your purchase of $289.95 or more. Add to cart and use code APRON at checkout.</span></li>
+                                </ul> -->
+                                
+                                  
+                              </div>
+
+                            </div>
+                          </div>
+                          <!-- ////////////////////////Retailer comparison cards//////////////////////////////// -->
+                          <div class="row" style="background-color: white; padding: 2%; margin-top: 10px;">
+  
+                            <div class="Col-2">
+                              <span style=" border-radius: 4px; background-color: cornsilk; box-shadow: 2px 2px 2px rgba(136, 124, 124, 0.432);padding:4%;">Amazon</span> 
+                              <img class="rounded float-left" src="https://www.vitamix.com/media/catalog/product/cache/df553e0882f1b5c97ab40e474a7e7b60/g/s/gs-rglam-black_fullsize_1.jpg" alt="Abvshs" style="width: 100px; height: 150px; margin-top: 12px;">
+                              <br><br><br><br><br><br> <br><br><br><br>
+                              <span style="font-size: small;"><b>Selling price: $559.95</b></span>
+
+                            </div>
+
+                            <div class="col-4">
+                              <div>
+                                <span style="text-align: center; font-size: small;"><b>7500</b></span><br>
+                                
+                                <div style="background-color: rgba(255, 248, 220, 0.418);  padding: 5%; margin: 1%; border-radius: 12px;">
+                                <span style=" text-decoration: underline; font-size: small;"> PRODUCT DETAILS</span>
+                                <ul style="list-style-type: none; font-size: small;">
+                                  <li >Warranty: NA </li>
+                                  <li>Shipping; $0.00</li>
+                                  <li>100% refund - 14days return</li>
+                                  <li>Pay by UPI/Debit/credit cards</li>
+                                </ul>
+                                </div>
+
+                              </div>
+
+                            </div>
+
+
+                            <div class="col-5">
+                              <div class="discounts" style="height: 230px; border: 2px dashed rgb(218, 22, 22); padding-right: 5%; padding-left: 20px;">
+                                <span style="font-size: small;"> <b>Discounts and promotions</b></span> <br>
+                                <span style="font-size: small;">Discounted Price - <b>$749.99</b></span> <br> <br>
+                                <!-- <ul>
+                                  <li>
+                                    <span style="font-size: small;">Gift Mom the Real Thing. Get up to $100 off Vitamix® blenders, just in time for Mother's Day. Sale ends 5/14.
+                                      FREE Gift with Purchase.</span>
+                                  </li>
+                                  <li><span style="font-size: small;">Get with your purchase of $289.95 or more. Add to cart and use code APRON at checkout.</span></li>
+                                </ul> -->
+                                
+                                  
+                              </div>
+
+                            </div>
+                          </div>
+
+                           <!-- ////////////////////////Retailer comparison cards//////////////////////////////// -->
+                          <div class="row" style="background-color: white; padding: 2%; margin-top: 10px;">
+                           
+                            <div class="Col-2">
+                              <span style=" border-radius: 4px; background-color: cornsilk; box-shadow: 2px 2px 2px rgba(136, 124, 124, 0.432);padding:4%;">Amazon</span> 
+                              <img class="rounded float-left" src="https://m.media-amazon.com/images/I/61brIKjIxTL._AC_SX522_.jpg" alt="Abvshs" style="width: 100px; height: 150px; margin-top: 12px;">
+                              <br><br><br><br><br><br> <br><br><br><br>
+                              <span style="font-size: small;"><b>Selling price: $749.99</b></span>
+
+                            </div>
+
+                            <div class="col-4">
+                              <div>
+                               <span style="text-align: center; font-size: small;"><b>Vitamix 7500 Blender Super Package, with 32oz Dry Grains Jar and 2-20oz To-Go Cups (Black)</b></span><br>
+                               
+                               <div style="background-color: rgba(255, 248, 220, 0.418);  padding: 5%; margin: 1%; border-radius: 12px;">
+                                <span style=" text-decoration: underline; font-size: small;"> PRODUCT DETAILS</span>
+                                <ul style="list-style-type: none; font-size: small;">
+                                  <li >Warranty: NA </li>
+                                  <li>Shipping; $0.00</li>
+                                  <li>100% refund - 14days return</li>
+                                  <li>Pay by UPI/Debit/credit cards</li>
+                                </ul>
+                               </div>
+
+                              </div>
+
+                            </div>
+
+
+                            <div class="col-5">
+                              <div class="discounts" style="height: 230px; border: 2px dashed rgb(218, 22, 22); padding-right: 5%; padding-left: 20px;">
+                                <span style="font-size: small;"> <b>Discounts and promotions</b></span> <br>
+                                <span style="font-size: small;">Discounted Price - <b>$749.99</b></span> <br> <br>
+                                <!-- <ul>
+                                  <li>
+                                    <span style="font-size: small;">Gift Mom the Real Thing. Get up to $100 off Vitamix® blenders, just in time for Mother's Day. Sale ends 5/14.
+                                      FREE Gift with Purchase.</span>
+                                  </li>
+                                  <li><span style="font-size: small;">Get with your purchase of $289.95 or more. Add to cart and use code APRON at checkout.</span></li>
+                                </ul> -->
+                                
+                                  
+                              </div>
+
+                            </div>
+                          </div>
+
+                          <!-- ////////////////////////Retailer comparison cards//////////////////////////////// -->
+                          <div class="row" style="background-color: white; padding: 2%; margin-top: 10px;">
+  
+                            <div class="Col-2">
+                              <span style=" border-radius: 4px; background-color: cornsilk; box-shadow: 2px 2px 2px rgba(136, 124, 124, 0.432);padding:4%;">Amazon</span> 
+                              <img class="rounded float-left" src="https://m.media-amazon.com/images/I/61brIKjIxTL._AC_SX522_.jpg" alt="Abvshs" style="width: 100px; height: 150px; margin-top: 12px;">
+                              <br><br><br><br><br><br> <br><br><br><br>
+                              <span style="font-size: small;"><b>Selling price: $749.99</b></span>
+
+                            </div>
+
+                            <div class="col-4">
+                              <div>
+                                <span style="text-align: center; font-size: small;"><b>Vitamix 7500 Blender Super Package, with 32oz Dry Grains Jar and 2-20oz To-Go Cups (Black)</b></span><br>
+                                
+                                <div style="background-color: rgba(255, 248, 220, 0.418);  padding: 5%; margin: 1%; border-radius: 12px;">
+                                <span style=" text-decoration: underline; font-size: small;"> PRODUCT DETAILS</span>
+                                <ul style="list-style-type: none; font-size: small;">
+                                  <li >Warranty: NA </li>
+                                  <li>Shipping; $0.00</li>
+                                  <li>100% refund - 14days return</li>
+                                  <li>Pay by UPI/Debit/credit cards</li>
+                                </ul>
+                                </div>
+
+                              </div>
+
+                            </div>
+
+
+                            <div class="col-5">
+                              <div class="discounts" style="height: 230px; border: 2px dashed rgb(218, 22, 22); padding-right: 5%; padding-left: 20px;">
+                                <span style="font-size: small;"> <b>Discounts and promotions</b></span> <br>
+                                <span style="font-size: small;">Discounted Price - <b>$749.99</b></span> <br> <br>
+                                <!-- <ul>
+                                  <li>
+                                    <span style="font-size: small;">Gift Mom the Real Thing. Get up to $100 off Vitamix® blenders, just in time for Mother's Day. Sale ends 5/14.
+                                      FREE Gift with Purchase.</span>
+                                  </li>
+                                  <li><span style="font-size: small;">Get with your purchase of $289.95 or more. Add to cart and use code APRON at checkout.</span></li>
+                                </ul> -->
+                                
+                                  
+                              </div>
+
+                            </div>
+                          </div>
+
+                          <!-- ////////////////////////Retailer comparison cards//////////////////////////////// -->
+                          <div class="row" style="background-color: white; padding: 2%; margin-top: 10px;">
+                           
+                            <div class="Col-2">
+                              <span style=" border-radius: 4px; background-color: cornsilk; box-shadow: 2px 2px 2px rgba(136, 124, 124, 0.432);padding:4%;">Amazon</span> 
+                              <img class="rounded float-left" src="https://m.media-amazon.com/images/I/61brIKjIxTL._AC_SX522_.jpg" alt="Abvshs" style="width: 100px; height: 150px; margin-top: 12px;">
+                              <br><br><br><br><br><br> <br><br><br><br>
+                              <span style="font-size: small;"><b>Selling price: $749.99</b></span>
+
+                            </div>
+
+                            <div class="col-4">
+                              <div>
+                               <span style="text-align: center; font-size: small;"><b>Vitamix 7500 Blender Super Package, with 32oz Dry Grains Jar and 2-20oz To-Go Cups (Black)</b></span><br>
+                               
+                               <div style="background-color: rgba(255, 248, 220, 0.418);  padding: 5%; margin: 1%; border-radius: 12px;">
+                                <span style=" text-decoration: underline; font-size: small;"> PRODUCT DETAILS</span>
+                                <ul style="list-style-type: none; font-size: small;">
+                                  <li >Warranty: NA </li>
+                                  <li>Shipping; $0.00</li>
+                                  <li>100% refund - 14days return</li>
+                                  <li>Pay by UPI/Debit/credit cards</li>
+                                </ul>
+                               </div>
+
+                              </div>
+
+                            </div>
+
+
+                            <div class="col-5">
+                              <div class="discounts" style="height: 230px; border: 2px dashed rgb(218, 22, 22); padding-right: 5%; padding-left: 20px;">
+                                <span style="font-size: small;"> <b>Discounts and promotions</b></span> <br>
+                                <span style="font-size: small;">Discounted Price - <b>$749.99</b></span> <br> <br>
+                                <!-- <ul>
+                                  <li>
+                                    <span style="font-size: small;">Gift Mom the Real Thing. Get up to $100 off Vitamix® blenders, just in time for Mother's Day. Sale ends 5/14.
+                                      FREE Gift with Purchase.</span>
+                                  </li>
+                                  <li><span style="font-size: small;">Get with your purchase of $289.95 or more. Add to cart and use code APRON at checkout.</span></li>
+                                </ul> -->
+                                
+                                  
+                              </div>
+
+                            </div>
+                          </div>
+
+
+
+   
+                        </div>
+
+
+                        <!-- ////////////////////////////////// VARIANTS////////////////////////////////////// -->
+                        <div class="tab-pane fade" id="variant" role="tabpanel" aria-labelledby="variant" style="background-color: #f3f3f3 !important; ">
+        
+
+
+                          <div class="card-deck" style="margin-top: 2%;">
+                            <div class="card">
+                              <img class="card-img-top" src="https://www.vitamix.com/media/catalog/product/cache/df553e0882f1b5c97ab40e474a7e7b60/g/s/gs-rglam-black_fullsize_1.jpg" alt="Card image cap">
+                              <div class="card-body">
+                                <span class="card-title" style="font-size: small;"><b>7500</b></span>
+                                <p class="card-text"><small class="text-muted">Selling Price:$559.95 </small></p>
+                                <p class="card-text"><small class="text-muted">Sold at <b>Vitamix</b></small></p>
+
+                                <!-- <div style="background-color: rgba(255, 248, 220, 0.418);  padding: 5%; margin: 1%; border-radius: 12px;">
+                                  <span style=" text-decoration: underline; font-size: small;"> PRODUCT DETAILS</span>
+                                  <ul style="list-style-type: none; font-size: small;" class="text-muted">
+                                    <li ><b>Warranty:</b> NA </li>
+                                    <li><Warranty:b>Warranty:</Warranty:b> $0.00</li>
+                                    <li>100% refund - 14days return</li>
+                                    <li><b>Pay by</b> UPI/Debit/credit cards</li>
+                                  </ul>
+                                  </div> -->
+                              </div>
+                            </div>
+                            <div class="card">
+                              <img class="card-img-top" src="https://images.costco-static.com/ImageDelivery/imageService?profileId=12026540&itemId=920795-847&recipeName=680" alt="Card image cap">
+                              <div class="card-body">
+                                <span class="card-title" style="font-size: small;"><b>Vitamix 7500 Blender Super Package with 2- 20oz To-Go Cups</b> </span>
+                                <p class="card-text"><small class="text-muted">Member Only Item</small></p>
+                                <p class="card-text"><small class="text-muted">Sold at <b>Costco</b></small></p>
+
+                              </div>
+                            </div>
+                            <div class="card">
+                              <img class="card-img-top" src="https://m.media-amazon.com/images/I/61brIKjIxTL._AC_SX522_.jpg" alt="Card image cap">
+                              <div class="card-body">
+                                <span class="card-title" style="font-size: small;"><b>Vitamix 7500 Blender Super Package, with 32oz Dry Grains Jar and 2-20oz To-Go Cups (Black)</b></span>
+                                <p class="card-text"><small class="text-muted">Selling Price: $749.99</small></p>
+                                <p class="card-text"><small class="text-muted">Sold at <b>Amazon</b></small></p>
+
+                              </div>
+                            </div>
+                            
+                          </div>
+
+                          <div class="card-deck" style="margin-top: 2%;">
+                            <div class="card">
+                              <img class="card-img-top" src="https://www.vitamix.com/media/catalog/product/cache/df553e0882f1b5c97ab40e474a7e7b60/7/5/7500-blk-intl-rglam-620x620.jpg" alt="Card image cap">
+                              <div class="card-body">
+                                <span class="card-title" style="font-size: small;"><b>Certified Reconditioned 7500</b></span>
+                                <p class="card-text"><small class="text-muted">Selling Price:$439.95</small></p>
+                                <p class="card-text"><small class="text-muted">Sold at <b>Vitamix</b></small></p>
+
+                              </div>
+                            </div>
+                            <div class="card">
+                              <img class="card-img-top" src="https://www.vitamix.com/media/catalog/product/cache/df553e0882f1b5c97ab40e474a7e7b60/b/u/bundle_image_request_for_7500_super_package_1.jpeg" alt="Card image cap">
+                              <div class="card-body">
+                                <span class="card-title" style="font-size: small;"><b>7500 Super Bundle</b></span>
+                                <p class="card-text"><small class="text-muted">Selling Price:$769.95</small></p>
+                                <p class="card-text"><small class="text-muted">Sold at <b>Vitamix</b></small></p>
+
+                              </div>
+                            </div>
+                            <div class="card">
+                              <img class="card-img-top" src="https://www.vitamix.com/media/catalog/product/cache/df553e0882f1b5c97ab40e474a7e7b60/7/5/7500-black-front-64oz-48ozaer__1_1.jpeg" alt="Card image cap">
+                              <div class="card-body">
+                                <span class="card-title" style="font-size: small;"><b>7500 with Aer Disc</b></span>
+                                <p class="card-text"><small class="text-muted">Selling Price:  </small></p>
+                                <p class="card-text"><small class="text-muted">Sold at <b>Vitamix</b></small></p>
+
+                              </div>
+                            </div>
+                            
+                          </div>
+
+                 
+
+
+                      </div>
+
+                        
+                        
+                        
+                        </div>
+                      </div>
+
+
+
+                      
+
+                      
+ 
+      
+                </div>
+              </div>
+
+
+        </div>
+       </section>
+    
+
+       
+
+  
+    <script>
+    let sidebar = document.querySelector(".sidebar");
+    let closeBtn = document.querySelector("#btn");
+    let searchBtn = document.querySelector(".bx-search");
+    let hide = document.querySelector(".card");
+  
+    closeBtn.addEventListener("click", ()=>{
+      sidebar.classList.toggle("open");
+      menuBtnChange();//calling the function(optional)
+    });
+  
+    searchBtn.addEventListener("click", ()=>{ // Sidebar open when you click on the search iocn
+      sidebar.classList.toggle("open");
+      menuBtnChange(); //calling the function(optional)
+    });
+  
+    // following are the code to change sidebar button(optional)
+    function menuBtnChange() {
+     if(sidebar.classList.contains("open")){
+       closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");//replacing the iocns class
+     }else {
+       closeBtn.classList.replace("bx-menu-alt-right","bx-menu");//replacing the iocns class
+     }
+    }
+    </script>
+   
+   <script>
+    $(document).on('ready', function () {
+      function cb(start, end) {
+        $('#js-daterangepicker-predefined span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'));
+      }
+  
+      $('#js-daterangepicker-predefined').daterangepicker({
+        startDate: start,
+        endDate: end,
+        ranges: {
+          'Today': [moment(), moment()],
+          'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+          'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+          'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+          'This Month': [moment().startOf('month'), moment().endOf('month')],
+          'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+        }
+      }, cb);
+  
+      cb(start, end);
+    });
+  </script>
+
+<script>
+  $(document).on('ready', function () {
+    // initialization of daterangepicker
+    $('.js-daterangepicker').daterangepicker();
+  });
+</script>
+   <script src="script.js"></script>
+   <script src="../assets/vendor/daterangepicker/moment.min.js"></script>
+  <script src="../assets/vendor/daterangepicker/daterangepicker.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+  </html>

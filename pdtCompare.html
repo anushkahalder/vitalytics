@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<!-- Created by CodingLab |www.youtube.com/CodingLabYT-->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title>ComparePage</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+   </head>
+   
+<body>
+
+
+  <div class="sidebar">
+    <div class="logo-details">
+      <!-- <i class='bx bxl-c-plus-plus icon'></i> -->
+        <!-- <div class="logo_name" style="color: rgb(172, 10, 10);">VITALYTICS</div> -->
+        <i class='bx bx-menu' id="btn" ></i>
+    </div>
+    <ul class="nav-list">
+      <!-- <li>
+          <i class='bx bx-search' ></i>
+         <input type="text" placeholder="Search...">
+         <span class="tooltip">Search</span>
+      </li> -->
+      <li>
+        <a href="#">
+          <i class='bx bx-grid-alt'></i>
+          <span class="links_name">Dashboard</span>
+        </a>
+         <span class="tooltip">Dashboard</span>
+      </li>
+ 
+     <li>
+       <a href="index.html">
+         <i class='bx bx-chart' ></i>
+         <span class="links_name">Competitive Analysis</span>
+       </a>
+       <span class="tooltip">Competitive Analysis</span>
+     </li>
+     <li>
+       <a href="brand.html">
+         <i class='bx bx-pie-chart-alt-2' ></i>
+         <span class="links_name">Brand Analysis</span>
+       </a>
+       <span class="tooltip">Brand Analysis</span>
+     </li>
+     <li>
+       <a href="notifications.html">
+         <i class='bx bx-bell' ></i>
+         <span class="links_name">Notifications</span>
+       </a>
+       <span class="tooltip">Notifications</span>
+     </li>
+ 
+     <li>
+       <a href="#">
+         <i class='bx bx-heart' ></i>
+         <span class="links_name">Coupon Violation</span>
+       </a>
+       <span class="tooltip">Coupon Violation</span>
+     </li>
+     <li>
+       <a href="#">
+         <i class='bx bx-cog' ></i>
+         <span class="links_name">Admin Role</span>
+       </a>
+       <span class="tooltip">Admin Role</span>
+     </li>
+     <!-- <li class="profile">
+         <div class="profile-details">
+           <div class="name_job">
+             <div class="job">Collapse</div>
+           </div>
+         </div>         <i class='bx bx-log-out' id="log_out" ></i>
+     </li> -->
+    </ul>
+  </div>
+
+
+  <section class="home-section">
+ 
+<!-- ---------------Top Nav Bar-----------------------  -->
+<nav class="navbar sticky-top navbar-light bg-light">
+  <a class="navbar-brand" href="#">
+    <img src="vitamixlogo.PNG" width="30" height="30" class="d-inline-block align-top" alt="">
+    <span style="color: rgb(177, 7, 7);">Vitalytics</span>
+  </a>
+  <form class="form-inline">
+    <!-- <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"> -->
+    <div class="cont">
+      <div class="searchInput">
+        <input type="text" placeholder="Search for any content..">
+        <div class="resultBox">
+
+        </div>
+        <div class="icon"><i class="fas fa-search"></i></div>
+      </div>
+    </div>
+    
+
+    <button class="btn btn-outline-dark my-2 my-sm-0" type="submit" style="margin-right: 55px;">Search</button>
+    <div class="btn-group" style="padding-right: 10px;">
+
+      <a class="nav-item nav-link dropdown-toggle mr-md-2" href="#" id="bd-versions" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" style="color: black; font-size: 20px; padding-left: -20px;">
+    <!-- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbG9cPD_gIpfsj4CXj70sxhLIyskQbP87RMg&usqp=CAU" width="30" height="30" class="d-inline-block align-top" alt="" > -->
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4MmBOmXsxgjBhhfDh4FSeM9wsFRgC_2uPrE362dA&s" width="30" height="30" class="d-inline-block align-top" alt="" style="border-radius: 50px;"> <small>Admin</small>
+        
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Profile</a> 
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#">LogOut</a>
+      </div>
+ 
+    </div>
+    <a href="notifications.html" style="color: black; font-size: larger;"> <i class='bx bx-bell' style="padding-right: 10px;" ></i></a>
+   
+  
+  </form>
+</nav>
+
+<!-- ----------------Bottom Nav Bar-------------------------- -->
+<nav class="navbar fixed-bottom navbar-light bg-light" style="margin-left: 5%;">
+  <a class="navbar-brand" href="#" style="float: right;"></a>
+  <span class="navbar-text" style="color: black;">
+    Last updated: 16-06-2023 17:00
+  </span>
+</nav>
+        <div class="container">
+
+            <div class="row">
+                <div class="col-3">
+                  <div class="cont" style="width: 100%; margin-top: 9%;">
+                    <div class="searchInput">
+                      <input type="text" placeholder="Search for any Product..">
+                      <div class="resultBox">
+              
+                      </div>
+                      <div class="icon"><i class="fas fa-search"></i></div>
+                    </div>
+                  </div>
+                </div>
+ 
+                <div class="col-3">
+                    <button onclick="myMove()" type="button" class="btn btn btn-dark" style="margin-top: 14%; margin-left: 10%;" >Compare</button>
+                    <!-- <button onclick="myMove()" type="button" class="btn btn-dark" style="margin-top: 14%; margin-left: 10%;">Compare</button> -->
+                  </div>
+      
+                <div class="col-3"></div>
+
+              </div>
+
+
+            <div class="row">
+                <div class="col-4" style="width: 100%; padding: 0% !important;">
+                    <div class="card" id="entity" style="width: 18rem; margin-top: 124%; margin-bottom: 10%; border-radius: 15px; width: 100%;">
+                        <div class="card-body"  >
+                            
+                          <h5 class="card-title">Product Details</h5>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item"><b>Brand</b></li>
+                          <li class="list-group-item">Selling Price</li>
+                          <li class="list-group-item">Discounted Price</li>
+                          <li class="list-group-item"> Rating</li>
+                          <li class="list-group-item"> Shipping Details</li>
+                          <li class="list-group-item"> Warranty</li>
+                          <li class="list-group-item"> Extended Warranty</li>
+                          <li class="list-group-item"> Availability Details</li>
+                          <li class="list-group-item"> Payment Methods</li>
+                          <li class="list-group-item"> MoneyBack Guarantee</li>
+                          <li class="list-group-item">Retailers</li>
+
+                        </ul>
+
+                      </div>
+
+
+                </div>
+                <div class="col-8"  style="width: 100%; padding: 0% !important;" >
+                    <div class="card-group" style="margin-top: 10%; margin-bottom: 10%; width: 100%;"> 
+
+
+
+                        <div class="card"  id="myclosebtn" style="width: 18rem; border-radius: 15px;  display: flex;" >
+                            <button onclick="myFunction()" type="button" class="btn btn-outline-danger" >Close</button>
+                            <!-- <button onclick="close()"  type="button" class="btn btn-outline-danger" style="max-width: 30%; margin-left: 70%; border-radius:0 15px 0 0 ;">Close</button> -->
+                            <!-- <img class="card-img-top" src="v4.png" alt="Card image cap"> -->
+                            <img class="card-img-top" src="https://www.vitamix.com/media/catalog/product/cache/df553e0882f1b5c97ab40e474a7e7b60/7/5/7500-blk-intl-rglam-620x620.jpg" alt="Card image cap">
+
+                            <div class="card-body">
+                              <h6 class="card-title">7500</h6>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                              <li class="list-group-item"><b>Vitamix</b></li>
+                              <li class="list-group-item">$559.95</li>
+                              <li class="list-group-item">$0.00</li>
+                              <li class="list-group-item"> 4.7(1091)</li>
+                            <li class="list-group-item"> Free shipping  </li>
+                            <li class="list-group-item"> 7 yrs(Free))</li>
+                            <li class="list-group-item">  3 yrs ($75.00)</li>
+                            <li class="list-group-item"> In Stock</li>
+                            <li class="list-group-item"> Credit Card | PayPal | Affirm</li>
+                            <li class="list-group-item"> --</li>
+                            <li class="list-group-item">Amazon, Costco </li>
+                            
+                          </ul>
+
+                          </div>
+
+                          <div class="card" id="myclosebtn2" style="width: 18rem; border-radius: 15px; width: 100%; display: flex;">
+                            <button onclick="myFunction2()" type="button" class="btn btn-outline-danger" >Close</button>
+
+                            <img class="card-img-top" src="ninjaa.PNG" alt="Card image cap">
+
+                            <div class="card-body">
+                              <h6 class="card-title">Ninja® Foodi® Power Blender Ultimate System with XL Smoothie Bowl Maker and Nutrient Extractor*</h6>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                              <li class="list-group-item"><b>Ninja</b></li>
+
+                              <li class="list-group-item">$239.99</li>
+                              <li class="list-group-item">$0.00</li>
+                              <li class="list-group-item"> 4.5(123)</li>
+                            <li class="list-group-item"> Free shipping  </li>
+                            <li class="list-group-item"> 1 year</li>
+                            <li class="list-group-item"> 24-Month $39.99 | 
+36-Month $54.99 </li>
+                            <li class="list-group-item"> In Stock</li>
+                            <li class="list-group-item">Credit Card | PayPal | Affirm</li>
+                            <li class="list-group-item"> 60 days</li>
+                            <li class="list-group-item">Amazon, Bestbuy, Target, Waltmart, Costco,Crate and Barrel </li>
+                            
+                          </ul>
+
+                          </div>
+
+                          <div class="card" id="myclosebtn3" style="width: 18rem; border-radius: 15px; width: 100%; display:none;">
+                            <button onclick="myFunction3()" type="button" class="btn btn-outline-danger" >Close</button>
+                            <img class="card-img-top" src="https://nbmedia.imgix.net/nb-pro-1000-hero-1500-x-1201-hero.jpg?auto=compress%2Cformat&ixlib=php-3.3.0&h=900" alt="Card image cap">
+                            <div class="card-body">
+                              <h6 class="card-title">nutribullet Pro 1000</h6>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                              <li class="list-group-item"><b>NutriBullet</b></li>
+                                <li class="list-group-item">$119.99</li>
+                                <li class="list-group-item">$119.99</li>
+                                <li class="list-group-item"> 4.2(665)</li>
+                              <li class="list-group-item"> Free shipping over $75</li>
+                              <li class="list-group-item">1 year</li>
+                              <li class="list-group-item"> 3 years</li>
+                              <li class="list-group-item"> In Stock</li>
+                              <li class="list-group-item">VISA/MasterCard/American Express</li>
+                              <li class="list-group-item">-</li>
+                              <li class="list-group-item">Best Buy, Amazon</li>
+
+                            </ul>
+
+                          </div>
+ 
+                      </div>
+
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+      </section>
+
+      <script>
+      function myFunction3() {
+        var a = document.getElementById("myclosebtn3"); 
+        var p = document.getElementById("entity");  
+
+      
+        if (a.style.display === "flex" && p.style.marginTop === "92%") {
+            a.style.display = "none";
+            p.style.marginTop = "124%"
+           
+       
+        }  
+      }
+ 
+      function myFunction2() {
+        var a = document.getElementById("myclosebtn2");      
+        if (a.style.display === "flex") {
+          a.style.display = "none"
+        }  
+      }
+
+
+        function myFunction() {
+        var a = document.getElementById("myclosebtn");      
+        if (a.style.display === "flex" ) {
+         a.style.display= "none"
+        }  
+      }
+
+      function myMove() {
+        
+        var a = document.getElementById("myclosebtn");     
+        var b = document.getElementById("myclosebtn2");     
+        var c = document.getElementById("myclosebtn3");  
+        var p = document.getElementById("entity");  
+        
+        c.style.display = "flex"
+        p.style.marginTop = "92%"
+
+        // if (c.style.display === "flex") {
+        //   c.style.display = "none"
+        // }  else{
+        //     c.style.display = "flex"
+        // } 
+      }
+
+      </script>
+      <script>
+        let sidebar = document.querySelector(".sidebar");
+        let closeBtn = document.querySelector("#btn");
+        let searchBtn = document.querySelector(".bx-search");
+        let hide = document.querySelector(".card");
+      
+        closeBtn.addEventListener("click", ()=>{
+          sidebar.classList.toggle("open");
+          menuBtnChange();//calling the function(optional)
+        });
+      
+        searchBtn.addEventListener("click", ()=>{ // Sidebar open when you click on the search iocn
+          sidebar.classList.toggle("open");
+          menuBtnChange(); //calling the function(optional)
+        });
+      
+        // following are the code to change sidebar button(optional)
+        function menuBtnChange() {
+         if(sidebar.classList.contains("open")){
+           closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");//replacing the iocns class
+         }else {
+           closeBtn.classList.replace("bx-menu-alt-right","bx-menu");//replacing the iocns class
+         }
+        }
+
+
+ 
+        </script>
+       
+
+       
+      
+       <script src="script.js"></script>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+      </body>
+      </html>

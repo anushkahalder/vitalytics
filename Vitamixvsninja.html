@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<!-- Created by CodingLab |www.youtube.com/CodingLabYT-->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title>Brand</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+   </head>
+   
+<body>
+
+
+
+  <div class="sidebar">
+    <div class="logo-details">
+      <!-- <i class='bx bxl-c-plus-plus icon'></i> -->
+        <!-- <div class="logo_name" style="color: rgb(172, 10, 10);">VITALYTICS</div> -->
+        <i class='bx bx-menu' id="btn" ></i>
+    </div>
+    <ul class="nav-list">
+      <!-- <li>
+          <i class='bx bx-search' ></i>
+         <input type="text" placeholder="Search...">
+         <span class="tooltip">Search</span>
+      </li> -->
+      <li>
+        <a href="#">
+          <i class='bx bx-grid-alt'></i>
+          <span class="links_name">Dashboard</span>
+        </a>
+         <span class="tooltip">Dashboard</span>
+      </li>
+ 
+     <li>
+       <a href="index.html">
+         <i class='bx bx-chart' ></i>
+         <span class="links_name">Competitive Analysis</span>
+       </a>
+       <span class="tooltip">Competitive Analysis</span>
+     </li>
+     <li>
+       <a href="brand.html">
+         <i class='bx bx-pie-chart-alt-2' ></i>
+         <span class="links_name">Brand Analysis</span>
+       </a>
+       <span class="tooltip">Brand Analysis</span>
+     </li>
+     <li>
+       <a href="notifications.html">
+         <i class='bx bx-bell' ></i>
+         <span class="links_name">Notifications</span>
+       </a>
+       <span class="tooltip">Notifications</span>
+     </li>
+ 
+     <li>
+       <a href="#">
+         <i class='bx bx-heart' ></i>
+         <span class="links_name">Coupon Violation</span>
+       </a>
+       <span class="tooltip">Coupon Violation</span>
+     </li>
+     <li>
+       <a href="#">
+         <i class='bx bx-cog' ></i>
+         <span class="links_name">Admin Role</span>
+       </a>
+       <span class="tooltip">Admin Role</span>
+     </li>
+     <!-- <li class="profile">
+         <div class="profile-details">
+           <div class="name_job">
+             <div class="job">Collapse</div>
+           </div>
+         </div>         <i class='bx bx-log-out' id="log_out" ></i>
+     </li> -->
+    </ul>
+  </div>
+
+
+  <section class="home-section">
+ 
+<!-- ---------------Top Nav Bar-----------------------  -->
+<nav class="navbar sticky-top navbar-light bg-light">
+  <a class="navbar-brand" href="#">
+    <img src="vitamixlogo.PNG" width="30" height="30" class="d-inline-block align-top" alt="">
+    <span style="color: rgb(177, 7, 7);">Vitalytics</span>
+  </a>
+  <form class="form-inline">
+    <!-- <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"> -->
+    <div class="cont">
+      <div class="searchInput">
+        <input type="text" placeholder="Search for any Content..">
+        <div class="resultBox">
+
+        </div>
+        <div class="icon"><i class="fas fa-search"></i></div>
+      </div>
+    </div>
+    
+
+    <button class="btn btn-outline-dark my-2 my-sm-0" type="submit" style="margin-right: 55px;">Search</button>
+    <div class="btn-group" style="padding-right: 10px;">
+
+      <a class="nav-item nav-link dropdown-toggle mr-md-2" href="#" id="bd-versions" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" style="color: black; font-size: 20px; padding-left: -20px;">
+    <!-- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbG9cPD_gIpfsj4CXj70sxhLIyskQbP87RMg&usqp=CAU" width="30" height="30" class="d-inline-block align-top" alt="" > -->
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4MmBOmXsxgjBhhfDh4FSeM9wsFRgC_2uPrE362dA&s" width="30" height="30" class="d-inline-block align-top" alt="" style="border-radius: 50px;"> <small>Admin</small>
+        
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Profile</a> 
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#">LogOut</a>
+      </div>
+ 
+    </div>
+    <a href="notifications.html" style="color: black; font-size: larger;"> <i class='bx bx-bell' style="padding-right: 10px;" ></i></a>
+   
+  
+  </form>
+</nav>
+
+<!-- ----------------Bottom Nav Bar-------------------------- -->
+<nav class="navbar fixed-bottom navbar-light bg-light" style="margin-left: 5%;">
+  <a class="navbar-brand" href="#" style="float: right;"></a>
+  <span class="navbar-text" style="color: black;">
+    Last updated: 16-06-2023 17:00
+  </span>
+</nav>
+    <div class="jumbotron jumbotron-fluid" style="background-color: black; color:cornsilk ;">
+
+        
+        <div class="container">
+          <h1 class="display-4">Vitamix Vs Ninjakitchen</h1>
+          <!-- <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p> -->
+        </div>
+      </div>
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-8">
+
+                <div class="card-group" style="margin-top: -10%;">
+                    <div class="card" style="width: 100%; height:100%; border-radius: 12px; box-shadow: 2px 3px 2px rgba(0, 0, 0, 0.5); border: none; ">
+                        <img class="card-img-top" src="Category.PNG" alt="Card image cap" style="width: 100%; height: 100%; padding: 3% 0% 3% 0% ; border-radius: 12px;" >
+                     
+                           
+                
+                    </div>
+                    <div class="card" style="width: 100%; height: 100%; border-radius: 12px; box-shadow: 2px 3px 2px rgba(0, 0, 0, 0.5); border: none; ">
+                      <img class="card-img-top" src="country.PNG" alt="Card image cap" style="width: 100%; height: 100%; padding: 3% 0% 3% 0% ; border-radius: 12px;" >
+                      
+                    </div>
+                    <div class="card" style="width: 100%; height: 100%; border-radius: 12px; box-shadow: 2px 3px 2px rgba(0, 0, 0, 0.5); border: none; ">
+                      <img class="card-img-top" src="Global.PNG" alt="Card image cap" style="width: 100%; height: 100%; padding: 3% 0% 3% 0% ; border-radius: 12px;">
+                       
+                    </div>
+                  </div>
+
+                    <div class="Traffic" style="background-color: white; margin: 10px; padding: 10px; border-radius: 12px; box-shadow: 2px 3px 2px rgba(0, 0, 0, 0.5);">
+                        <div> <span style="color: rgb(116, 111, 111); padding-left: 12px;">Traffic and Engagement</span></div>
+                        <div class="row" style="padding-left: 2%;">
+                           
+                            <div class="card-group" style="padding: 2%;">
+ 
+                                <div class="card">
+                                  <img class="card-img-top" src="monthChange.PNG" alt="Card image cap">
+
+                                </div>
+                                <div class="card">
+                                  <img class="card-img-top" src="bounce.PNG" alt="Card image cap">
+
+                                </div>
+                              </div>
+
+
+                        </div>
+                        <div class="row" style="padding-left: 2%;">
+                            <div class="card-group" style="padding: 2%;">
+
+                                <div class="card">
+                                  <img class="card-img-top" src="ninjaVsVita.PNG" alt="Card image cap">
+
+                                </div>
+                                <div class="card">
+                                  <img class="card-img-top" src="pagesVisit.PNG" alt="Card image cap">
+
+                                </div>
+                                <div class="card">
+                                    <img class="card-img-top" src="avgVisit.PNG" alt="Card image cap">
+  
+                                  </div>
+                              </div>
+
+                            
+                        </div>
+
+
+
+
+                    </div>
+
+                    <div class="Audiance" style="background-color: white; margin: 10px; padding: 10px; border-radius: 12px; box-shadow: 2px 3px 2px rgba(0, 0, 0, 0.5);">
+                        <div class="row" style="padding-left: 2%;">
+                            <div> <span style="color: rgb(116, 111, 111); padding-left: 20px;"> Audiance Engagement</span></div>
+                            <div class="card-group" style="padding: 2%;">
+ 
+                                <div class="card">
+                                  <img class="card-img-top" src="maleFemale.PNG" alt="Card image cap">
+
+                                </div>
+                                <div class="card">
+                                  <img class="card-img-top" src="Age.PNG" alt="Card image cap">
+
+                                </div>
+                              </div>
+
+
+                        </div>
+
+
+
+
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="Social" style="background-color: white; margin: 10px; padding: 10px; border-radius: 12px; box-shadow: 2px 3px 2px rgba(0, 0, 0, 0.5);">
+                                <div class="row" style="padding-left: 2%;">
+ 
+                                    <div class="card-group" style="padding: 2%;">
+         
+                                        <div class="card">
+                                          <img class="card-img-top" src="Socialmedia.PNG" alt="Card image cap">
+                                        </div>
+        
+                                      </div>
+            
+                                </div>
+        
+                            </div>       
+                        </div>
+                        <div class="col-6">
+                            <div class="Marketing" style="background-color: white; margin: 10px; padding: 10px; border-radius: 12px; box-shadow: 2px 3px 2px rgba(0, 0, 0, 0.5);">
+                                <div class="row" style="padding-left: 2%;">
+                       
+                                    <div class="card-group" style="padding: 2%;">
+         
+                                        <div class="card">
+                                          <img class="card-img-top" src="channels.PNG" alt="Card image cap">
+                                        </div>
+        
+                                      </div>
+            
+                                </div>
+        
+                            </div>       
+                        </div>
+                    </div>
+
+ 
+            
+            </div>
+ 
+            <div class="col-4">
+
+                
+                <div class="sidepanel" style="background-color: white; padding: 2px; height: 350px; width: 300px; border-radius: 12px ;box-shadow: 0 3px 2px rgba(0, 0, 0, 0.5); margin-bottom: 10px;  margin-top: -90px;">
+                      <div style="margin-top: 3%;"><span style="padding-left: 12px;  color: cadetblue; ">Select brands to compare</span></div>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style=" background-color:gainsboro; margin-top: -10%; color: black; border: none; padding: 20px 25px 20px 25px;">
+                          Select 1st Brand  
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="#">Vitamix</a>
+                          <a class="dropdown-item" href="#">Breville</a>
+                          <a class="dropdown-item" href="#"> Ninjakitchen</a>
+                          <a class="dropdown-item" href="#"> Nutribullet</a>
+                          <a class="dropdown-item" href="#"> Blendjet</a>
+                          <a class="dropdown-item" href="#"> Ninjakitchen</a>
+                          <a class="dropdown-item" href="#"> Cuisinart</a>
+                          <a class="dropdown-item" href="#"> Oster</a>
+                        </div>
+                      </div>
+                      <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-top: -20%; background-color:gainsboro; color: black; border: none; padding: 20px;">
+                          Select 2nd Brand
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="#">Vitamix</a>
+                          <a class="dropdown-item" href="brandNew.html">Breville</a>
+                          <a class="dropdown-item" href="Vitamixvsninja.html"> Ninjakitchen</a>
+                          <a class="dropdown-item" href="#"> Nutribullet</a>
+                          <a class="dropdown-item" href="#"> Blendjet</a>
+                          <a class="dropdown-item" href="#"> Ninjakitchen</a>
+                          <a class="dropdown-item" href="#"> Cuisinart</a>
+                          <a class="dropdown-item" href="#"> Oster</a>
+                        </div>
+                      </div>
+
+                      <button type="button" class="btn btn-dark"  style="margin-left: 18%; padding: 15px 51px 15px 51px;">Compare</button>
+ 
+ 
+
+                </div>
+
+                <div class="sidepanel2" style="background-color: white; padding: 2px; height: 310px; width: 300px; border-radius: 12px ;box-shadow: 0 3px 2px rgba(0, 0, 0, 0.5); margin-bottom: 10px;  margin-top: 10px;">
+                    <div style="margin-top: 3%;"><span style="padding-left: 12px;  color: cadetblue; "> Traffic Share by Countries</span></div>
+
+                    <img src="world.PNG" class="img-fluid" alt="Responsive image" style="padding-left: 30px;">
+
+                    <div>
+                        <table class="table">
+                            <thead>
+                              <tr>
+                              
+                                <th scope="col">Country</th>
+                                <th scope="col">Vitamix</th>
+                                <th scope="col">Ninja</th>
+
+                                 
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                               
+                                <td>US</td>
+                                <td>79.09%</td>
+                                <td>85.65%</td>
+                            
+                              </tr>
+                              <tr>
+                         
+                                <td>Canada</td>
+                                <td>8.54%</td>
+                                <td>4.92%</td>
+                              </tr>
+
+                            </tbody>
+                          </table>
+                    </div>
+ 
+
+
+
+              </div>
+
+
+              <div class="sidepanel3" style="background-color: white; padding: 2px; height: 150px; width: 300px; border-radius: 12px ;box-shadow: 0 3px 2px rgba(0, 0, 0, 0.5); margin-bottom: 10px;  margin-top: 10px;">
+             
+                <img src="key.PNG" class="img-fluid" alt="Responsive image" style="padding-left: 8px; height: 130px; width: 300px;">
+                
+              </div>
+
+              
+              <div class="sidepanel3" style="background-color: white; padding: 2px; height: 170px; width: 300px; border-radius: 12px ;box-shadow: 0 3px 2px rgba(0, 0, 0, 0.5); margin-bottom: 10px;  margin-top: 10px;">
+             
+                <img src="revenue.PNG" class="img-fluid" alt="Responsive image" style="padding-left: 8px; height: 150px; width: 300px;">
+                
+              </div>
+
+
+              <div class="sidepanel3" style=" background-color: white; padding: 2px; height: 150px; width: 300px; border-radius: 12px ;box-shadow: 0 3px 2px rgba(0, 0, 0, 0.5); margin-bottom: 10px;  margin-top: 10px;">
+             
+                <img src="emp.PNG" class="img-fluid" alt="Responsive image" style="padding-left: 8px; height: 130px; width: 300px;" >
+                
+              </div>
+
+<!--               
+              <div class="sidepanel4" style="background-color: white; padding: 2px; height: 320px; width: 300px; border-radius: 12px ;box-shadow: 0 3px 2px rgba(0, 0, 0, 0.5);  margin-top: 10px; margin-bottom: 10px;">
+                <div style="margin-top: 3%;"><span style="padding-left: 12px;  color: cadetblue; ">Referral Traffic</span></div>
+             
+                <div style="padding-left: 10%;">
+
+                    
+                   <ul style="font-size: small; padding-bottom: 10%;"><span><b>Vitamix</b></span>
+                    <li ><span style=" padding: 5px; border-radius: 15px; margin: 1%;">Banking Credit and Lending ---29.99% </span> </li>               
+                    <li><span style="  padding: 5px; border-radius: 15px; margin: 1%;">Insurance --------------------15.10%</span></li>    
+                    <li> <span style=" padding: 5px; border-radius: 15px; margin: 1%;">Business Service---------------7.74%</span></li>
+                    <li><span style="  padding: 5px; border-radius: 15px;margin: 1%;">Finance  ----------------------5.39%</span></li>
+                   </ul>
+                   
+                   <ul style="font-size: small; padding-bottom: 1%;"><span><b>Ninja</b></span>
+                    <li ><span style=" padding: 5px; border-radius: 15px; margin: 1%;">Cooking and recipies ---------22.79% </span> </li>               
+                    <li><span style="  padding: 5px; border-radius: 15px; margin: 1%;">Health Conditions & Concerns-22.73%</span></li>    
+                    <li> <span style=" padding: 5px; border-radius: 15px; margin: 1%;">Beverages-------------------14.83%</span></li>
+                    <li><span style="  padding: 5px; border-radius: 15px;margin: 1%;">Groceries  --------------------10.72%</span></li>
+                    <li><span style="  padding: 5px; border-radius: 15px;margin: 1%;">News & Media Publishers-------4.99%</span></li>
+                   </ul>
+                    
+                </div>
+
+ 
+
+              </div> -->
+
+              
+            </div>
+
+        </div>
+
+
+
+    </div>
+</section>
+
+
+
+    
+<script>
+    function myFunction() {
+    var x = document.getElementById("mytable");
+    var y = document.getElementById("mycard");
+    var z = document.getElementById("mycard2");
+  
+  
+    if (x.style.display === "none" && y.style.display === "none" ) {
+      x.style.display = "block";
+      y.style.display = "flex"
+      z.style.display = "none"
+    } else {
+      x.style.display = "none";
+      y.style.display = "none"
+      z.style.display = "flex"
+    }
+  }
+  </script>
+  
+    <script>
+    let sidebar = document.querySelector(".sidebar");
+    let closeBtn = document.querySelector("#btn");
+    let searchBtn = document.querySelector(".bx-search");
+    let hide = document.querySelector(".card");
+  
+    closeBtn.addEventListener("click", ()=>{
+      sidebar.classList.toggle("open");
+      menuBtnChange();//calling the function(optional)
+    });
+  
+    searchBtn.addEventListener("click", ()=>{ // Sidebar open when you click on the search iocn
+      sidebar.classList.toggle("open");
+      menuBtnChange(); //calling the function(optional)
+    });
+  
+    // following are the code to change sidebar button(optional)
+    function menuBtnChange() {
+     if(sidebar.classList.contains("open")){
+       closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");//replacing the iocns class
+     }else {
+       closeBtn.classList.replace("bx-menu-alt-right","bx-menu");//replacing the iocns class
+     }
+    }
+    </script>
+   
+  
+   <script src="script.js"></script>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+  </html>
